@@ -1,15 +1,10 @@
 
 import { Button } from "@/components/ui/button";
+import { initCalendly } from "@/utils/calendly";
 
 export const Hero = () => {
   const openCalendly = () => {
-    if (typeof window !== 'undefined' && window.Calendly) {
-      window.Calendly.initPopupWidget({
-        url: 'https://calendly.com/mbillocharles/client'
-      });
-    } else {
-      console.error('Calendly script not loaded');
-    }
+    initCalendly();
   };
   
   return (

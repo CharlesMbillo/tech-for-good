@@ -9,17 +9,32 @@ interface LayoutProps {
 
 export const Layout = ({ children }: LayoutProps) => {
   useEffect(() => {
+    // Load Calendly CSS
+    const link = document.createElement('link');
+    link.href = 'https://assets.calendly.com/assets/external/widget.css';
+    link.rel = 'stylesheet';
+    document.head.appendChild(link);
+    
     // Load Calendly script
     const script = document.createElement('script');
     script.src = 'https://assets.calendly.com/assets/external/widget.js';
     script.async = true;
+    script.onload = () => {
+      console.log('Calendly script loaded successfully');
+    };
     document.head.appendChild(script);
     
     return () => {
       // Cleanup if needed
       const calendlyScript = document.querySelector('script[src="https://assets.calendly.com/assets/external/widget.js"]');
+      const calendlyCSS = document.querySelector('link[href="https://assets.calendly.com/assets/external/widget.css"]');
+      
       if (calendlyScript) {
         calendlyScript.remove();
+      }
+      
+      if (calendlyCSS) {
+        calendlyCSS.remove();
       }
     };
   }, []);

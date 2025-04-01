@@ -3,16 +3,11 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
+import { initCalendly } from "@/utils/calendly";
 
 export const Navbar = () => {
   const openCalendly = () => {
-    if (typeof window !== 'undefined' && window.Calendly) {
-      window.Calendly.initPopupWidget({
-        url: 'https://calendly.com/mbillocharles/client'
-      });
-    } else {
-      console.error('Calendly script not loaded');
-    }
+    initCalendly();
   };
 
   return (
