@@ -14,11 +14,13 @@ export const ProfessionalSummary = () => {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About Me</h2>
             <p className="text-gray-500 md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed">
               A versatile technologist with 10+ years of experience architecting Web and Mobile solutions that prioritize user-centric, 
-              inclusive, and ethical technology development. Blending innovation with social impact. 
-              <Badge variant="outline" className="ml-2 bg-purple-50 text-purple-700 border-purple-200">
+              inclusive, and ethical technology development. Blending innovation with social impact.
+            </p>
+            <div className="flex items-center">
+              <Badge variant="outline" className="bg-purple-50 text-purple-700 border-purple-200">
                 AWS Certified Cloud Practitioner
               </Badge>
-            </p>
+            </div>
             <p className="text-gray-500 md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed">
               Based in Nairobi, Kenya, I deliver solutions designed for emerging markets with a focus on accessibility, 
               offline capabilities, and low-resource environments.
@@ -31,6 +33,7 @@ export const ProfessionalSummary = () => {
                   src="/placeholder.svg" 
                   alt="Charles Mbillo presenting at Power Learn Project"
                   className="w-full h-full object-cover rounded-2xl transition-transform duration-300 hover:scale-105"
+                  loading="lazy"
                 />
               </AspectRatio>
             </div>

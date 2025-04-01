@@ -1,3 +1,4 @@
+
 import { 
   Tabs, 
   TabsContent, 
@@ -138,6 +139,9 @@ export const TechnicalFocus = () => {
                       src="/placeholder.svg" 
                       alt="Cross-platform development"
                       className="w-full h-full object-cover opacity-30"
+                      loading="lazy"
+                      width="600"
+                      height="240"
                     />
                     <div className="absolute inset-0 flex items-center justify-center">
                       <h3 className="font-bold text-2xl text-white">Cross-Platform Development</h3>
@@ -178,6 +182,9 @@ export const TechnicalFocus = () => {
                       src="/placeholder.svg" 
                       alt="Education technology"
                       className="w-full h-full object-cover opacity-30"
+                      loading="lazy"
+                      width="600"
+                      height="240"
                     />
                     <div className="absolute inset-0 flex items-center justify-center">
                       <h3 className="font-bold text-2xl text-white">Ed-Tech Platforms</h3>
@@ -214,6 +221,9 @@ export const TechnicalFocus = () => {
                       src="/placeholder.svg" 
                       alt="AI and ML technology"
                       className="w-full h-full object-cover opacity-30"
+                      loading="lazy"
+                      width="600"
+                      height="240"
                     />
                     <div className="absolute inset-0 flex items-center justify-center">
                       <h3 className="font-bold text-2xl text-white">Robotics, Data Science & AI/ML</h3>

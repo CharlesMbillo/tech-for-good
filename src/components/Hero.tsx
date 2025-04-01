@@ -16,6 +16,9 @@ export const Hero = () => {
           src="/placeholder.svg" 
           alt="Background pattern" 
           className="w-full h-full object-cover"
+          loading="lazy"
+          width="1200"
+          height="800"
         />
       </div>
       
@@ -35,7 +38,12 @@ export const Hero = () => {
           
           <div className="flex flex-col gap-2 min-[400px]:flex-row mt-4">
             <Button className="bg-purple-700 hover:bg-purple-800">View Portfolio</Button>
-            <Button variant="outline" className="border-purple-700 text-purple-700 hover:bg-purple-50" onClick={openCalendly}>
+            <Button 
+              variant="outline" 
+              className="border-purple-700 text-purple-700 hover:bg-purple-50" 
+              onClick={openCalendly}
+              type="button"
+            >
               Book a Call
             </Button>
           </div>
