@@ -1,4 +1,3 @@
-
 import { 
   Tabs, 
   TabsContent, 
@@ -6,6 +5,7 @@ import {
   TabsTrigger 
 } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
 
 export const TechnicalFocus = () => {
   return (
@@ -28,10 +28,18 @@ export const TechnicalFocus = () => {
         <div className="mt-12">
           <Tabs defaultValue="web-mobile" className="w-full">
             <TabsList className="grid w-full grid-cols-2 md:grid-cols-4">
-              <TabsTrigger value="web-mobile">Web & Mobile</TabsTrigger>
-              <TabsTrigger value="cross-platform">Cross-Platform</TabsTrigger>
-              <TabsTrigger value="ed-tech">Ed-Tech</TabsTrigger>
-              <TabsTrigger value="ai-ml">AI/ML & Robotics</TabsTrigger>
+              <TabsTrigger value="web-mobile" className="data-[state=active]:bg-purple-100 data-[state=active]:text-purple-700">
+                Web & Mobile
+              </TabsTrigger>
+              <TabsTrigger value="cross-platform" className="data-[state=active]:bg-purple-100 data-[state=active]:text-purple-700">
+                Cross-Platform
+              </TabsTrigger>
+              <TabsTrigger value="ed-tech" className="data-[state=active]:bg-purple-100 data-[state=active]:text-purple-700">
+                Ed-Tech
+              </TabsTrigger>
+              <TabsTrigger value="ai-ml" className="data-[state=active]:bg-purple-100 data-[state=active]:text-purple-700">
+                AI/ML & Robotics
+              </TabsTrigger>
             </TabsList>
             
             <TabsContent value="web-mobile" className="mt-6">
@@ -124,73 +132,112 @@ export const TechnicalFocus = () => {
             
             <TabsContent value="cross-platform" className="mt-6">
               <div className="bg-slate-50 p-6 rounded-lg border border-slate-200">
-                <h3 className="font-bold text-lg mb-3">Cross-Platform Development</h3>
-                <div className="space-y-4">
-                  <div>
-                    <h4 className="font-semibold text-sm text-purple-700">Why?</h4>
-                    <p className="text-sm text-slate-600">
-                      Faster deployment across iOS/Android with shared logic.
-                    </p>
+                <Card className="overflow-hidden">
+                  <div className="h-40 bg-purple-800 relative overflow-hidden">
+                    <img 
+                      src="/placeholder.svg" 
+                      alt="Cross-platform development"
+                      className="w-full h-full object-cover opacity-30"
+                    />
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <h3 className="font-bold text-2xl text-white">Cross-Platform Development</h3>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-sm text-purple-700">Frameworks to Watch</h4>
-                    <ul className="list-disc pl-5 text-sm text-slate-600 space-y-1">
-                      <li><b>Flutter:</b> Growing ecosystem, performant UI</li>
-                      <li><b>React Native:</b> Large community, JavaScript-based</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-sm text-purple-700">Key Challenge</h4>
-                    <p className="text-sm text-slate-600">
-                      Balancing performance with native features (e.g., AR, heavy animations).
-                    </p>
-                  </div>
-                </div>
+                  <CardContent className="pt-6">
+                    <div className="space-y-4">
+                      <div>
+                        <h4 className="font-semibold text-sm text-purple-700">Why?</h4>
+                        <p className="text-sm text-slate-600">
+                          Faster deployment across iOS/Android with shared logic.
+                        </p>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-sm text-purple-700">Frameworks to Watch</h4>
+                        <ul className="list-disc pl-5 text-sm text-slate-600 space-y-1">
+                          <li><b>Flutter:</b> Growing ecosystem, performant UI</li>
+                          <li><b>React Native:</b> Large community, JavaScript-based</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-sm text-purple-700">Key Challenge</h4>
+                        <p className="text-sm text-slate-600">
+                          Balancing performance with native features (e.g., AR, heavy animations).
+                        </p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
               </div>
             </TabsContent>
             
             <TabsContent value="ed-tech" className="mt-6">
               <div className="bg-slate-50 p-6 rounded-lg border border-slate-200">
-                <h3 className="font-bold text-lg mb-3">Ed-Tech Platforms</h3>
-                <div className="space-y-4">
-                  <div>
-                    <h4 className="font-semibold text-sm text-purple-700">Trends</h4>
-                    <ul className="list-disc pl-5 text-sm text-slate-600 space-y-1">
-                      <li><b>AI-driven Learning:</b> Personalized content and adaptive paths</li>
-                      <li><b>Low-Bandwidth Modes:</b> For remote learners with limited connectivity</li>
-                      <li><b>Gamification:</b> Boost engagement (badges, leaderboards)</li>
-                    </ul>
+                <Card className="overflow-hidden">
+                  <div className="h-40 bg-purple-700 relative overflow-hidden">
+                    <img 
+                      src="/placeholder.svg" 
+                      alt="Education technology"
+                      className="w-full h-full object-cover opacity-30"
+                    />
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <h3 className="font-bold text-2xl text-white">Ed-Tech Platforms</h3>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-sm text-purple-700">Key Focus</h4>
-                    <p className="text-sm text-slate-600">
-                      Building educational platforms that work effectively in low-resource environments, 
-                      focusing on offline capabilities and minimal data usage.
-                    </p>
-                  </div>
-                </div>
+                  <CardContent className="pt-6">
+                    <div className="space-y-4">
+                      <div>
+                        <h4 className="font-semibold text-sm text-purple-700">Trends</h4>
+                        <ul className="list-disc pl-5 text-sm text-slate-600 space-y-1">
+                          <li><b>AI-driven Learning:</b> Personalized content and adaptive paths</li>
+                          <li><b>Low-Bandwidth Modes:</b> For remote learners with limited connectivity</li>
+                          <li><b>Gamification:</b> Boost engagement (badges, leaderboards)</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-sm text-purple-700">Key Focus</h4>
+                        <p className="text-sm text-slate-600">
+                          Building educational platforms that work effectively in low-resource environments, 
+                          focusing on offline capabilities and minimal data usage.
+                        </p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
               </div>
             </TabsContent>
             
             <TabsContent value="ai-ml" className="mt-6">
               <div className="bg-slate-50 p-6 rounded-lg border border-slate-200">
-                <h3 className="font-bold text-lg mb-3">Robotics, Data Science & AI/ML</h3>
-                <div className="space-y-4">
-                  <div>
-                    <h4 className="font-semibold text-sm text-purple-700">Strategic Value</h4>
-                    <ul className="list-disc pl-5 text-sm text-slate-600 space-y-1">
-                      <li>Bridges hardware (robotics) and software (AI/ML) for automation</li>
-                      <li>Enhances decision-making via data science in economic/ed-tech systems</li>
-                    </ul>
+                <Card className="overflow-hidden">
+                  <div className="h-40 bg-purple-600 relative overflow-hidden">
+                    <img 
+                      src="/placeholder.svg" 
+                      alt="AI and ML technology"
+                      className="w-full h-full object-cover opacity-30"
+                    />
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <h3 className="font-bold text-2xl text-white">Robotics, Data Science & AI/ML</h3>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-sm text-purple-700">Applications</h4>
-                    <p className="text-sm text-slate-600">
-                      Implementing practical AI solutions that address real challenges in emerging markets, 
-                      with a focus on ethical AI principles and appropriate technology.
-                    </p>
-                  </div>
-                </div>
+                  <CardContent className="pt-6">
+                    <div className="space-y-4">
+                      <div>
+                        <h4 className="font-semibold text-sm text-purple-700">Strategic Value</h4>
+                        <ul className="list-disc pl-5 text-sm text-slate-600 space-y-1">
+                          <li>Bridges hardware (robotics) and software (AI/ML) for automation</li>
+                          <li>Enhances decision-making via data science in economic/ed-tech systems</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-sm text-purple-700">Applications</h4>
+                        <p className="text-sm text-slate-600">
+                          Implementing practical AI solutions that address real challenges in emerging markets, 
+                          with a focus on ethical AI principles and appropriate technology.
+                        </p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
               </div>
             </TabsContent>
           </Tabs>
