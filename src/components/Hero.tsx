@@ -2,6 +2,16 @@
 import { Button } from "@/components/ui/button";
 
 export const Hero = () => {
+  const openCalendly = () => {
+    if (typeof window !== 'undefined' && window.Calendly) {
+      window.Calendly.initPopupWidget({
+        url: 'https://calendly.com/mbillocharles/client'
+      });
+    } else {
+      console.error('Calendly script not loaded');
+    }
+  };
+  
   return (
     <section className="py-20 md:py-32 bg-gradient-to-br from-purple-50 via-white to-blue-50">
       <div className="container px-4 md:px-6">
@@ -14,8 +24,8 @@ export const Hero = () => {
           </p>
           <div className="flex flex-col gap-2 min-[400px]:flex-row">
             <Button className="bg-purple-700 hover:bg-purple-800">View Portfolio</Button>
-            <Button variant="outline" className="border-purple-700 text-purple-700 hover:bg-purple-50">
-              Contact Me
+            <Button variant="outline" className="border-purple-700 text-purple-700 hover:bg-purple-50" onClick={openCalendly}>
+              Book a Call
             </Button>
           </div>
         </div>
