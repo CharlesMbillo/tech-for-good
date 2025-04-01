@@ -1,8 +1,22 @@
 
 import { Badge } from "@/components/ui/badge";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { useEffect } from "react";
 
 export const ProfessionalSummary = () => {
+  // Initialize Credly badge script after component mounts
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = "//cdn.credly.com/assets/utilities/embed.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      // Cleanup if component unmounts
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <section id="about" className="py-16 bg-white">
       <div className="container px-4 md:px-6">
@@ -16,11 +30,22 @@ export const ProfessionalSummary = () => {
               A versatile technologist with 10+ years of experience architecting Web and Mobile solutions that prioritize user-centric, 
               inclusive, and ethical technology development. Blending innovation with social impact.
             </p>
-            <div className="flex items-center">
-              <Badge variant="outline" className="bg-purple-50 text-purple-700 border-purple-200">
+            
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+              <Badge variant="outline" className="bg-purple-50 text-purple-700 border-purple-200 self-start">
                 AWS Certified Cloud Practitioner
               </Badge>
+              
+              {/* Credly Badge */}
+              <div 
+                className="certification-badge"
+                data-iframe-width="230" 
+                data-iframe-height="180" 
+                data-share-badge-id="1d468bdd-b3f8-4508-b53a-df1a339b4058" 
+                data-share-badge-host="https://www.credly.com"
+              ></div>
             </div>
+            
             <p className="text-gray-500 md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed">
               Based in Nairobi, Kenya, I deliver solutions designed for emerging markets with a focus on accessibility, 
               offline capabilities, and low-resource environments.
