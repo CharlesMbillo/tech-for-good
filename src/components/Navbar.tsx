@@ -29,10 +29,10 @@ export const Navbar = () => {
             Focus Areas
           </a>
           <a href="#services" className="text-sm font-medium transition-colors hover:text-purple-700">
-            Contact
+            Services
           </a>
           <a href="#projects" className="text-sm font-medium transition-colors hover:text-purple-700">
-            Contact
+            Projects
           </a>
           <a href="#contact" className="text-sm font-medium transition-colors hover:text-purple-700">
             Contact
@@ -59,10 +59,10 @@ export const Navbar = () => {
                 Focus Areas
               </a>
               <a href="#services" className="text-lg font-medium transition-colors hover:text-purple-700">
-                Contact
+                Services
               </a>
-              <a href="#projects"" className="text-lg font-medium transition-colors hover:text-purple-700">
-                Contact
+              <a href="#projects" className="text-lg font-medium transition-colors hover:text-purple-700">
+                Projects
               </a>
               <a href="#contact" className="text-lg font-medium transition-colors hover:text-purple-700">
                 Contact
