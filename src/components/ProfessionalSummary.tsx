@@ -1,3 +1,4 @@
+
 import { Badge } from "@/components/ui/badge";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { useEffect } from "react";
@@ -62,7 +63,7 @@ export const ProfessionalSummary = () => {
             <div className="relative w-full max-w-md overflow-hidden rounded-2xl shadow-xl border border-purple-100">
               <AspectRatio ratio={1 / 1} className="bg-purple-50">
                 <img
-                  src="components/images/charles_plp.jpg"
+                  src="/src/components/images/charles_plp.jpg"
                   loading="lazy"
                   alt="Charles Mbillo - Professional Web Developer"
                   className="w-full h-full object-cover rounded-2xl transition-transform duration-300 hover:scale-105"
