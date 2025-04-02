@@ -28,6 +28,12 @@ export const Navbar = () => {
           <a href="#focus-areas" className="text-sm font-medium transition-colors hover:text-purple-700">
             Focus Areas
           </a>
+          <a href="#services" className="text-sm font-medium transition-colors hover:text-purple-700">
+            Contact
+          </a>
+          <a href="#projects" className="text-sm font-medium transition-colors hover:text-purple-700">
+            Contact
+          </a>
           <a href="#contact" className="text-sm font-medium transition-colors hover:text-purple-700">
             Contact
           </a>
@@ -51,6 +57,12 @@ export const Navbar = () => {
               </a>
               <a href="#focus-areas" className="text-lg font-medium transition-colors hover:text-purple-700">
                 Focus Areas
+              </a>
+              <a href="#services" className="text-lg font-medium transition-colors hover:text-purple-700">
+                Contact
+              </a>
+              <a href="#projects"" className="text-lg font-medium transition-colors hover:text-purple-700">
+                Contact
               </a>
               <a href="#contact" className="text-lg font-medium transition-colors hover:text-purple-700">
                 Contact
