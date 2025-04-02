@@ -62,7 +62,6 @@ export const Navbar = () => {
                 Services
               </a>
               <a href="#projects" className="text-lg font-medium transition-colors hover:text-purple-700">
-                Projects
               </a>
               <a href="#contact" className="text-lg font-medium transition-colors hover:text-purple-700">
                 Contact
