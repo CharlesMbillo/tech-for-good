@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { AtSignIcon, GlobeIcon, MapPinIcon, PhoneIcon } from "lucide-react";
+import { AtSignIcon, PhoneIcon, GlobeIcon } from "lucide-react";
 
 export const ContactSection = () => {
   return (
@@ -21,20 +21,16 @@ export const ContactSection = () => {
             </p>
             <div className="space-y-4">
               <div className="flex items-center gap-2">
-                <MapPinIcon className="h-5 w-5 text-purple-700" />
-                <span>Nairobi, Kenya</span>
-              </div>
-              <div className="flex items-center gap-2">
                 <PhoneIcon className="h-5 w-5 text-purple-700" />
                 <a href="tel:+254111810434" className="hover:text-purple-700 transition-colors">+254 111 810 434</a>
               </div>
               <div className="flex items-center gap-2">
-                <AtSignIcon className="h-5 w-5 text-purple-700" />
-                <a href="mailto:mbillocharles@gmail.com" className="hover:text-purple-700 transition-colors">mbillocharles@gmail.com</a>
-              </div>
-              <div className="flex items-center gap-2">
                 <GlobeIcon className="h-5 w-5 text-purple-700" />
                 <a href="https://wa.me/254111810434" className="hover:text-purple-700 transition-colors">WhatsApp Chat</a>
+              </div>
+              <div className="flex items-center gap-2">
+                <AtSignIcon className="h-5 w-5 text-purple-700" />
+                <a href="mailto:mbillocharles@gmail.com" className="hover:text-purple-700 transition-colors">mbillocharles@gmail.com</a>
               </div>
             </div>
           </div>
