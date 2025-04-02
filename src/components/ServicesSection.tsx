@@ -1,6 +1,8 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowRightIcon, CircleIcon, ServerIcon, GlobeIcon, DatabaseIcon, BrainIcon, RobotIcon } from "lucide-react";
+// Option 1: Most likely correct (using 'Bot' without Icon suffix)
+// Option 2: If you're using a version that adds 'Icon' suffixes
+import { ArrowRightIcon, CircleIcon, ServerIcon, GlobeIcon, DatabaseIcon, BrainIcon, BotIcon } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 export const ServicesSection = () => {
