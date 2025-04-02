@@ -1,6 +1,6 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowRightIcon, CircleIcon, ServerIcon, GlobeIcon, DatabaseIcon } from "lucide-react";
+import { ArrowRightIcon, CircleIcon, ServerIcon, GlobeIcon, DatabaseIcon, BrainIcon, RobotIcon } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 export const ServicesSection = () => {
@@ -19,7 +19,7 @@ export const ServicesSection = () => {
           </p>
         </div>
         
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-2">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {/* Cloud Computing Services Card */}
           <Card className="overflow-hidden border-purple-100 transition-all hover:shadow-lg">
             <div className="p-1 bg-purple-50">
@@ -43,6 +43,39 @@ export const ServicesSection = () => {
                   "Infrastructure Management",
                   "Cloud Integration",
                   "Cybersecurity Protocols"
+                ].map((feature, index) => (
+                  <li key={index} className="flex items-center gap-2">
+                    <ArrowRightIcon className="h-4 w-4 text-purple-600 flex-shrink-0" />
+                    <span className="text-gray-700">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+            </CardContent>
+          </Card>
+
+          {/* AI/ML Services Card */}
+          <Card className="overflow-hidden border-purple-100 transition-all hover:shadow-lg">
+            <div className="p-1 bg-purple-50">
+              <div className="h-48 flex items-center justify-center bg-purple-100 rounded-t-md">
+                <div className="w-full h-full flex items-center justify-center">
+                  <div className="p-4">
+                    <BrainIcon className="h-20 w-20 text-purple-600" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <CardHeader>
+              <CardTitle className="text-xl">AI & Machine Learning</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul className="space-y-2">
+                {[
+                  "Generative AI Development",
+                  "Machine Learning Models",
+                  "Computer Vision Solutions",
+                  "Natural Language Processing",
+                  "AI Chatbot Development",
+                  "Predictive Analytics"
                 ].map((feature, index) => (
                   <li key={index} className="flex items-center gap-2">
                     <ArrowRightIcon className="h-4 w-4 text-purple-600 flex-shrink-0" />
@@ -157,22 +190,22 @@ export const ServicesSection = () => {
               </CardContent>
             </Card>
 
-            {/* Optimization Card */}
+            {/* Robotics & Automation Card */}
             <Card className="border-purple-100">
               <CardHeader className="bg-purple-50">
                 <div className="flex items-center gap-2">
-                  <GlobeIcon className="h-6 w-6 text-purple-600" />
-                  <CardTitle>Optimization & Support</CardTitle>
+                  <RobotIcon className="h-6 w-6 text-purple-600" />
+                  <CardTitle>Robotics & Automation</CardTitle>
                 </div>
               </CardHeader>
               <CardContent className="pt-6">
                 <ul className="space-y-2">
                   {[
-                    "SEO & Conversion Rate Optimization (CRO)",
-                    "Full-cycle IT Consultancy",
-                    "24/7 Technical Support",
-                    "Internet Services Reselling",
-                    "Cybersecurity Management"
+                    "IoT Solutions Development",
+                    "Robotic Process Automation (RPA)",
+                    "Smart Home Systems",
+                    "Industrial Automation",
+                    "Embedded Systems Programming"
                   ].map((item, index) => (
                     <li key={index} className="flex items-center gap-2">
                       <CircleIcon className="h-2 w-2 text-purple-600" />

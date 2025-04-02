@@ -63,6 +63,28 @@ export const ProjectsSection = () => {
             </CardContent>
           </Card>
 
+          {/* AI & Robotics Projects */}
+          <Card className="overflow-hidden border-purple-100 transition-all hover:shadow-lg">
+            <div className="h-48 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1555255707-c07966088b7b"
+                alt="AI & Robotics Projects"
+                className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+              />
+            </div>
+            <CardContent className="p-6">
+              <h3 className="text-xl font-bold mb-4">AI & Robotics</h3>
+              <ul className="space-y-2 mb-6 list-disc pl-5">
+                <li>Predictive Analytics Dashboard</li>
+                <li>Computer Vision for Quality Control</li>
+                <li>IoT Home Automation System</li>
+              </ul>
+              <Button className="w-full bg-purple-700 hover:bg-purple-800">
+                View Project
+              </Button>
+            </CardContent>
+          </Card>
+
           {/* Fintech Projects */}
           <Card className="overflow-hidden border-purple-100 transition-all hover:shadow-lg">
             <div className="h-48 overflow-hidden">
