@@ -28,9 +28,8 @@ export const ProfessionalSummary = () => {
               About Me
             </h2>
             <p className="text-gray-500 md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed">
-              A versatile technologist with 10+ years of experience architecting
-              Web and Mobile solutions that prioritize user-centric, inclusive,
-              and ethical technology development. Blending innovation with
+              A versatile technologist with 10+ years of experience bridging between technology and real-world value.
+              Web & Mobile, Data and Cloud solutions, whether optimizing business processes or advancing social good, my strength lies in <b>adaptability, problem-solving, and end-to-end execution.</b> Blending innovation with
               social impact.
             </p>
 
@@ -55,7 +54,8 @@ export const ProfessionalSummary = () => {
             <p className="text-gray-500 md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed">
               Based in Nairobi, Kenya, I deliver solutions designed for emerging
               markets with a focus on accessibility, offline capabilities, and
-              low-resource environments.
+              low-resource environments. Prioritize user-centric, inclusive,
+              and ethical technology development.
             </p>
           </div>
           <div className="flex justify-center">

@@ -11,11 +11,11 @@ export const CoreExpertise = () => {
     },
     {
       title: "Cloud Computing (focus on Cloud Native technologies like microservices, containers, and container orchestration)",
-      badges: ["AWS", "Docker", "Kubernetes"]
+      badges: ["AWS", "Docker", "Kubernetes", "OpenStack"]
     },
     {
       title: "Data Solutions Modelling",
-      badges: ["SQL", "NoSQL", "Data Analytics"]
+      badges: ["Excel", "SQL", "NoSQL", "MongoDB", "Power BI"]
     },
     {
       title: "Enterprise IT Consulting",
