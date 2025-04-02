@@ -19,7 +19,7 @@ export const ServicesSection = () => {
           </p>
         </div>
         
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {/* Cloud Computing Services Card */}
           <Card className="overflow-hidden border-purple-100 transition-all hover:shadow-lg">
             <div className="p-1 bg-purple-50">
