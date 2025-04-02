@@ -1,4 +1,3 @@
-
 import { CheckIcon } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -7,20 +6,21 @@ export const CoreExpertise = () => {
   const expertiseAreas = [
     {
       title: "Full-Stack Web & Mobile Development",
-      badges: ["React", "Next.js", "Node.js", "React Native"]
+      badges: ["React", "Next.js", "Node.js", "React Native"],
     },
     {
-      title: "Cloud Computing (focus on Cloud Native technologies like microservices, containers, and container orchestration)",
-      badges: ["AWS", "Docker", "Kubernetes", "OpenStack"]
+      title:
+        "Cloud Computing (focus on Cloud Native technologies like microservices, containers, and container orchestration)",
+      badges: ["AWS", "Docker", "Kubernetes", "OpenStack"],
     },
     {
       title: "Data Solutions Modelling",
-      badges: ["Excel", "SQL", "NoSQL", "MongoDB", "Power BI"]
+      badges: ["Excel", "SQL", "NoSQL", "MongoDB", "Power BI"],
     },
     {
       title: "Enterprise IT Consulting",
-      badges: ["Strategy", "Architecture", "Implementation"]
-    }
+      badges: ["Strategy", "Architecture", "Implementation"],
+    },
   ];
 
   return (
@@ -31,15 +31,21 @@ export const CoreExpertise = () => {
             <div className="inline-block rounded-lg bg-purple-100 px-3 py-1 text-sm text-purple-700">
               Expertise
             </div>
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Core Technical Skills</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+              Core Technical Skills
+            </h2>
             <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Specialized expertise in building solutions for emerging markets with a focus on accessibility and impact.
+              Specialized expertise in building solutions for emerging markets
+              with a focus on accessibility and impact.
             </p>
           </div>
         </div>
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 md:grid-cols-2">
           {expertiseAreas.map((expertise, index) => (
-            <Card key={index} className="border border-purple-100 hover:shadow-md transition-shadow duration-300">
+            <Card
+              key={index}
+              className="border border-purple-100 hover:shadow-md transition-shadow duration-300"
+            >
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
                   <div className="flex h-8 w-8 items-center justify-center rounded-full bg-purple-100">
@@ -49,7 +55,11 @@ export const CoreExpertise = () => {
                     <h3 className="font-medium text-left">{expertise.title}</h3>
                     <div className="flex flex-wrap gap-2">
                       {expertise.badges.map((badge, i) => (
-                        <Badge key={i} variant="outline" className="bg-purple-50 text-purple-700 border-purple-200">
+                        <Badge
+                          key={i}
+                          variant="outline"
+                          className="bg-purple-50 text-purple-700 border-purple-200"
+                        >
                           {badge}
                         </Badge>
                       ))}
