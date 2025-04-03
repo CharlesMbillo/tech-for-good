@@ -1,7 +1,6 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-// Option 1: Most likely correct (using 'Bot' without Icon suffix)
-// Option 2: If you're using a version that adds 'Icon' suffixes
+// Fixed: Changed RobotIcon to BotIcon which is available in lucide-react
 import { ArrowRightIcon, CircleIcon, ServerIcon, GlobeIcon, DatabaseIcon, BrainIcon, BotIcon } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
@@ -192,11 +191,11 @@ export const ServicesSection = () => {
               </CardContent>
             </Card>
 
-            {/* Robotics & Automation Card */}
+            {/* Robotics & Automation Card - Changed from RobotIcon to BotIcon */}
             <Card className="border-purple-100">
               <CardHeader className="bg-purple-50">
                 <div className="flex items-center gap-2">
-                  <RobotIcon className="h-6 w-6 text-purple-600" />
+                  <BotIcon className="h-6 w-6 text-purple-600" />
                   <CardTitle>Robotics & Automation</CardTitle>
                 </div>
               </CardHeader>
