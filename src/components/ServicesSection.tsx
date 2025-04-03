@@ -1,6 +1,4 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-// Fixed: Changed RobotIcon to BotIcon which is available in lucide-react
 import { ArrowRightIcon, CircleIcon, ServerIcon, GlobeIcon, DatabaseIcon, BrainIcon, BotIcon } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
@@ -21,7 +19,6 @@ export const ServicesSection = () => {
         </div>
         
          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {/* Cloud Computing Services Card */}
           <Card className="overflow-hidden border-purple-100 transition-all hover:shadow-lg">
             <div className="p-1 bg-purple-50">
               <div className="h-48 flex items-center justify-center bg-purple-100 rounded-t-md">
@@ -54,7 +51,6 @@ export const ServicesSection = () => {
             </CardContent>
           </Card>
 
-          {/* AI/ML Services Card */}
           <Card className="overflow-hidden border-purple-100 transition-all hover:shadow-lg">
             <div className="p-1 bg-purple-50">
               <div className="h-48 flex items-center justify-center bg-purple-100 rounded-t-md">
@@ -87,7 +83,6 @@ export const ServicesSection = () => {
             </CardContent>
           </Card>
 
-          {/* Web Development Services Card */}
           <Card className="overflow-hidden border-purple-100 transition-all hover:shadow-lg">
             <div className="p-1 bg-purple-50">
               <div className="h-48 bg-purple-100 rounded-t-md overflow-hidden">
@@ -123,11 +118,9 @@ export const ServicesSection = () => {
           </Card>
         </div>
 
-        {/* Comprehensive Managed Services */}
         <div className="mt-16">
           <h2 className="text-2xl font-bold mb-8 text-center">Comprehensive Managed Services</h2>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {/* Core Managed Services Card */}
             <Card className="border-purple-100">
               <CardHeader className="bg-purple-50">
                 <div className="flex items-center gap-2">
@@ -153,7 +146,6 @@ export const ServicesSection = () => {
               </CardContent>
             </Card>
 
-            {/* Specialized Solutions Card */}
             <Card className="border-purple-100">
               <CardHeader className="bg-purple-50">
                 <div className="flex items-center gap-2">
@@ -191,7 +183,6 @@ export const ServicesSection = () => {
               </CardContent>
             </Card>
 
-            {/* Robotics & Automation Card - Changed from RobotIcon to BotIcon */}
             <Card className="border-purple-100">
               <CardHeader className="bg-purple-50">
                 <div className="flex items-center gap-2">
