@@ -29,12 +29,7 @@ export const ProfessionalSummary = () => {
               About Me
             </h2>
             <p className="text-gray-500 md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed">
-              A versatile technologist with 10+ years of experience bridging
-              between technology and real-world value. Web & Mobile, Data and
-              Cloud solutions, whether optimizing business processes or
-              advancing social good, my strength lies in{" "}
-              <b>adaptability, problem-solving, and end-to-end execution.</b>{" "}
-              Blending innovation with social impact.
+            <b>Innovation-Driven Full-Stack Developer & Solutions Architect</b> with 3+ years of experience building scalable web, mobile, data, and cloud solutions that bridge technology and real-world impact. Adept at <b>end-to-end execution</b>—from ideation to deployment—with a DevOps-aware approach to optimize performance, security, and business efficiency. Passionate about <b>blending technical innovation with social good</b>, delivering measurable results through adaptable problem-solving and cross-functional collaboration.
             </p>
 
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
