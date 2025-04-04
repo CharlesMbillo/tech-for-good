@@ -17,6 +17,10 @@ export const ProfessionalSummary = () => {
     };
   }, []);
 
+  const openImageInNewTab = () => {
+    window.open("/src/components/images/charles_plp.jpg", "_blank");
+  };
+
   return (
     <section id="about" className="py-16 bg-white">
       <div className="container px-4 md:px-6">
@@ -69,7 +73,8 @@ export const ProfessionalSummary = () => {
                   src="/src/components/images/charles_plp.jpg"
                   loading="lazy"
                   alt="Charles Mbillo - Professional Web Developer"
-                  className="w-full h-full object-cover rounded-2xl transition-transform duration-300 hover:scale-105"
+                  className="w-full h-full object-cover rounded-2xl transition-transform duration-300 hover:scale-105 cursor-pointer"
+                  onClick={openImageInNewTab}
                 />
               </AspectRatio>
             </div>
