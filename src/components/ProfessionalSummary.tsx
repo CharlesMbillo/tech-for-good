@@ -17,6 +17,10 @@ export const ProfessionalSummary = () => {
     };
   }, []);
 
+  const openImageInNewTab = () => {
+    window.open("/src/components/images/charles_plp.jpg", "_blank");
+  };
+
   return (
     <section id="about" className="py-16 bg-white">
       <div className="container px-4 md:px-6">
@@ -53,8 +57,8 @@ export const ProfessionalSummary = () => {
             <p className="text-gray-500 md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed">
               Based in Nairobi, Kenya, I deliver solutions designed for emerging
               markets with a focus on accessibility, offline capabilities, and
-              low-resource environments. Prioritize user-centric, inclusive, and
-              ethical technology development.
+              low-resource environments. Prioritize client-focused solutions, inclusive, and
+              ethical technology development under tight constraints."
             </p>
           </div>
           <div className="flex justify-center">
@@ -64,7 +68,8 @@ export const ProfessionalSummary = () => {
                   src="/src/components/images/charles_plp.jpg"
                   loading="lazy"
                   alt="Charles Mbillo - Professional Web Developer"
-                  className="w-full h-full object-cover rounded-2xl transition-transform duration-300 hover:scale-105"
+                  className="w-full h-full object-cover rounded-2xl transition-transform duration-300 hover:scale-105 cursor-pointer"
+                  onClick={openImageInNewTab}
                 />
               </AspectRatio>
             </div>

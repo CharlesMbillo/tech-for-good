@@ -3,6 +3,10 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 export const ProjectsSection = () => {
+  const openImageInNewTab = (imageUrl: string) => {
+    window.open(imageUrl, '_blank');
+  };
+
   return (
     <section id="projects" className="py-16 bg-purple-50">
       <div className="container px-4 md:px-6">
@@ -21,7 +25,10 @@ export const ProjectsSection = () => {
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {/* Community Based Projects */}
           <Card className="overflow-hidden border-purple-100 transition-all hover:shadow-lg">
-            <div className="h-48 overflow-hidden">
+            <div 
+              className="h-48 overflow-hidden cursor-pointer" 
+              onClick={() => openImageInNewTab("https://images.unsplash.com/photo-1531297484001-80022131f5a1")}
+            >
               <img
                 src="https://images.unsplash.com/photo-1531297484001-80022131f5a1"
                 alt="Community Based Projects"
@@ -35,7 +42,10 @@ export const ProjectsSection = () => {
                 <li>Parish Census and Automation</li>
                 <li>Library Management System</li>
               </ul>
-              <Button className="w-full bg-purple-700 hover:bg-purple-800">
+              <Button 
+                className="w-full bg-purple-700 hover:bg-purple-800"
+                onClick={() => openImageInNewTab("https://images.unsplash.com/photo-1531297484001-80022131f5a1")}
+              >
                 View Project
               </Button>
             </CardContent>
@@ -43,7 +53,10 @@ export const ProjectsSection = () => {
 
           {/* EdTech Projects */}
           <Card className="overflow-hidden border-purple-100 transition-all hover:shadow-lg">
-            <div className="h-48 overflow-hidden">
+            <div 
+              className="h-48 overflow-hidden cursor-pointer"
+              onClick={() => openImageInNewTab("https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d")}
+            >
               <img
                 src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
                 alt="EdTech Projects"
@@ -57,7 +70,10 @@ export const ProjectsSection = () => {
                 <li>Online Digital Content CBC</li>
                 <li>Learning Management System</li>
               </ul>
-              <Button className="w-full bg-purple-700 hover:bg-purple-800">
+              <Button 
+                className="w-full bg-purple-700 hover:bg-purple-800"
+                onClick={() => openImageInNewTab("https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d")}
+              >
                 View Project
               </Button>
             </CardContent>
@@ -65,7 +81,10 @@ export const ProjectsSection = () => {
 
           {/* AI & Robotics Projects */}
           <Card className="overflow-hidden border-purple-100 transition-all hover:shadow-lg">
-            <div className="h-48 overflow-hidden">
+            <div 
+              className="h-48 overflow-hidden cursor-pointer"
+              onClick={() => openImageInNewTab("https://images.unsplash.com/photo-1555255707-c07966088b7b")}
+            >
               <img
                 src="https://images.unsplash.com/photo-1555255707-c07966088b7b"
                 alt="AI & Robotics Projects"
@@ -79,7 +98,10 @@ export const ProjectsSection = () => {
                 <li>Computer Vision for Quality Control</li>
                 <li>IoT Home Automation System</li>
               </ul>
-              <Button className="w-full bg-purple-700 hover:bg-purple-800">
+              <Button 
+                className="w-full bg-purple-700 hover:bg-purple-800"
+                onClick={() => openImageInNewTab("https://images.unsplash.com/photo-1555255707-c07966088b7b")}
+              >
                 View Project
               </Button>
             </CardContent>
@@ -87,7 +109,10 @@ export const ProjectsSection = () => {
 
           {/* Fintech Projects */}
           <Card className="overflow-hidden border-purple-100 transition-all hover:shadow-lg">
-            <div className="h-48 overflow-hidden">
+            <div 
+              className="h-48 overflow-hidden cursor-pointer"
+              onClick={() => openImageInNewTab("https://images.unsplash.com/photo-1518770660439-4636190af475")}
+            >
               <img
                 src="https://images.unsplash.com/photo-1518770660439-4636190af475"
                 alt="Fintech Projects"
@@ -99,7 +124,10 @@ export const ProjectsSection = () => {
               <ul className="space-y-2 mb-6 list-disc pl-5">
                 <li>USSD Based Sacco Transactions App</li>
               </ul>
-              <Button className="w-full bg-purple-700 hover:bg-purple-800">
+              <Button 
+                className="w-full bg-purple-700 hover:bg-purple-800"
+                onClick={() => openImageInNewTab("https://images.unsplash.com/photo-1518770660439-4636190af475")}
+              >
                 View Project
               </Button>
             </CardContent>
