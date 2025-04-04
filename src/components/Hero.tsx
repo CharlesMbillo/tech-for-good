@@ -28,7 +28,7 @@ export const Hero = () => {
           </Badge>
 
           <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-            <span className="text-purple-700">Tech for Good |</span> Full-Stack Solutions
+            <span className="text-purple-700">Tech for Good |</span> DevOps-aware Full-Stack Solutions
             Developer | Cloud Practitioner <span className="text-purple-700">| Founder</span>
           </h1>
 
