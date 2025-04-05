@@ -37,7 +37,7 @@ export const ProfessionalSummary = () => {
             <p>Experienced in designing, building, and deploying <b>scalable web, mobile, and cloud solutions</b>
                for emerging markets. Combines <b>3+ years of Full-Stack expertise</b> (frontend to infrastructure) 
                with a focus on <b>performance, security, and cost-efficiency</b>. Passionate about <b>impact-driven technology</b>, 
-               delivering accessible, client-focused solutions that maximize resources and drive measurable outcomes.</p>
+               delivering accessible, client-focused solutions that maximize resources and drive measurable outcomes.</p></p>
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
               <Badge
                 variant="outline"
