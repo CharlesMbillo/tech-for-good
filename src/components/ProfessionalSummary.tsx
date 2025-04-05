@@ -55,7 +55,7 @@ export const ProfessionalSummary = () => {
             <p className="text-gray-500 md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed">
               Based in Nairobi, Kenya, I deliver solutions designed for emerging
               markets with a focus on accessibility, offline capabilities, and
-              low-resource environments. Prioritize client-focused solutions, inclusive, and
+              low-resource environments. Prioritize client-focused solutions, inclusive, transformative and
               ethical technology development under tight constraints."
             </p>
           </div>
