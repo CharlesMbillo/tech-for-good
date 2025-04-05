@@ -33,8 +33,7 @@ export const Hero = () => {
           </h1>
 
           <p className="max-w-[700px] text-gray-500 md:text-xl">
-            Building ethical, inclusive, and user-centric technology solutions
-            for emerging markets
+          Bridging Technology and Real-World Impact.
           </p>
 
           <div className="flex flex-col gap-2 min-[400px]:flex-row mt-4">
