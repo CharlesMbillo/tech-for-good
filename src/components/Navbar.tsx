@@ -2,7 +2,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu } from "lucide-react";
+import { Menu, Home } from "lucide-react";
 import { initCalendly } from "@/utils/calendly";
 
 export const Navbar = () => {
@@ -19,6 +19,10 @@ export const Navbar = () => {
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-6">
+          <a href="#" className="text-sm font-medium transition-colors hover:text-purple-700 flex items-center gap-1">
+            <Home className="h-4 w-4" />
+            Home
+          </a>
           <a href="#about" className="text-sm font-medium transition-colors hover:text-purple-700">
             About
           </a>
@@ -49,6 +53,10 @@ export const Navbar = () => {
           </SheetTrigger>
           <SheetContent side="right">
             <nav className="flex flex-col gap-4 mt-8">
+              <a href="#" className="text-lg font-medium transition-colors hover:text-purple-700 flex items-center gap-2">
+                <Home className="h-5 w-5" />
+                Home
+              </a>
               <a href="#about" className="text-lg font-medium transition-colors hover:text-purple-700">
                 About
               </a>
@@ -62,6 +70,7 @@ export const Navbar = () => {
                 Services
               </a>
               <a href="#projects" className="text-lg font-medium transition-colors hover:text-purple-700">
+                Projects
               </a>
               <a href="#contact" className="text-lg font-medium transition-colors hover:text-purple-700">
                 Contact
