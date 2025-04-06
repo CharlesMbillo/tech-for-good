@@ -57,10 +57,17 @@ export const ProfessionalSummary = () => {
             </div>
 
             <p className="text-gray-500 md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed">
-              Based in Nairobi-Kenya, I deliver solutions designed for emerging
-              markets with a focus on accessibility, offline capabilities, and
-              low-resource environments. Prioritize client-focused solutions, inclusive, transformative and
-              ethical technology development under tight constraints."
+              Based in Nairobi-Kenya, **"From LEGO Mindstorms prototypes to hardened Raspberry Pi/Arduino deployments, my focus is robotics that solve real problems. 
+              The Integrated Coding and Robotics Program (ICRPplus) with BLIS Global, we're manufacturing Africa's IoT workforce through brutal pragmatism:
+Fintech: ATM predictive maintenance bots cutting bank downtime by 40%
+
+Agritech: Solar-powered soil sensors triggering micro-irrigation via M-Pesa payments
+
+Healthtech: Offline-capable diagnostic robots for rural clinics (TensorFlow Lite on Jetson Nano)
+
+Smart Cities: License plate recognition for matatu fleets using Edge Impulse-optimized models
+
+Our CBC-aligned labs deliver 80% hands-on training on the exact systems powering Africa's digital economy. This isn't education - it's industrial-grade skills injection."**
             </p>
           </div>
           <div className="flex justify-center">
