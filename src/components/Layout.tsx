@@ -2,6 +2,7 @@
 import React, { useEffect } from "react";
 import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
+import { Sidebar } from "./Sidebar";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -42,7 +43,10 @@ export const Layout = ({ children }: LayoutProps) => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100">
       <Navbar />
-      <main>{children}</main>
+      <div className="flex">
+        <Sidebar />
+        <main className="flex-1">{children}</main>
+      </div>
       <Footer />
     </div>
   );
