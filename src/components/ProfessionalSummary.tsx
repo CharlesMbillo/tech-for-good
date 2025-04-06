@@ -24,14 +24,33 @@ export const ProfessionalSummary = () => {
   return (
     <section id="about" className="py-16 bg-white">
       <div className="container px-4 md:px-6">
-        <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
-          <div className="space-y-4">
-            <Badge className="bg-purple-100 text-purple-700 hover:bg-purple-200 border-none mb-2">
-              About Me
-            </Badge>
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-              About Me
-            </h2>
+        <div className="text-center mb-8">
+          <Badge className="bg-purple-100 text-purple-700 hover:bg-purple-200 border-none mb-2">
+            About Me
+          </Badge>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+            About Me
+          </h2>
+        </div>
+        
+        <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-start">
+          {/* Profile image column - moved to first position on desktop */}
+          <div className="flex justify-center order-2 lg:order-1">
+            <div className="relative w-full max-w-md overflow-hidden rounded-2xl shadow-xl border border-purple-100">
+              <AspectRatio ratio={1 / 1} className="bg-purple-50">
+                <img
+                  src="/src/components/images/charles_plp.jpg"
+                  loading="lazy"
+                  alt="Charles Mbillo - Professional Web Developer"
+                  className="w-full h-full object-cover rounded-2xl transition-transform duration-300 hover:scale-105 cursor-pointer"
+                  onClick={openImageInNewTab}
+                />
+              </AspectRatio>
+            </div>
+          </div>
+          
+          {/* Content column */}
+          <div className="space-y-6 order-1 lg:order-2">
             <div className="text-gray-500 md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed">
               <p><b>DevOps-Aware Full-Stack Developer | AWS Certified Cloud Practitioner</b></p>
               <p>
@@ -41,19 +60,20 @@ export const ProfessionalSummary = () => {
                 delivering accessible, client-focused solutions that maximize resources and drive measurable outcomes.
               </p>
             </div>
-            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            
+            {/* Certification badge */}
+            <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-4 p-4 bg-purple-50 rounded-lg">
               <Badge
                 variant="outline"
-                className="bg-purple-50 text-purple-700 border-purple-200 self-start"
+                className="bg-purple-50 text-purple-700 border-purple-200"
               >
                 AWS Certified Cloud Practitioner
               </Badge>
 
-              {/* Credly Badge */}
               <div
                 className="certification-badge"
-                data-iframe-width="230"
-                data-iframe-height="180"
+                data-iframe-width="150"
+                data-iframe-height="150"
                 data-share-badge-id="1d468bdd-b3f8-4508-b53a-df1a339b4058"
                 data-share-badge-host="https://www.credly.com"
               ></div>
@@ -76,19 +96,6 @@ export const ProfessionalSummary = () => {
               <p className="mt-2">
                 CBC-aligned labs deliver 80% hands-on training on the exact systems powering Africa's digital economy. This isn't education - it's industrial-grade skills injection."
               </p>
-            </div>
-          </div>
-          <div className="flex justify-center">
-            <div className="relative w-full max-w-md overflow-hidden rounded-2xl shadow-xl border border-purple-100">
-              <AspectRatio ratio={1 / 1} className="bg-purple-50">
-                <img
-                  src="/src/components/images/charles_plp.jpg"
-                  loading="lazy"
-                  alt="Charles Mbillo - Professional Web Developer"
-                  className="w-full h-full object-cover rounded-2xl transition-transform duration-300 hover:scale-105 cursor-pointer"
-                  onClick={openImageInNewTab}
-                />
-              </AspectRatio>
             </div>
           </div>
         </div>
