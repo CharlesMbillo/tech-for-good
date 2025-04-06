@@ -24,7 +24,7 @@ export const ProfessionalSummary = () => {
   return (
     <section id="about" className="py-16 bg-white">
       <div className="container px-4 md:px-6">
-        <div className="text-center mb-8">
+        <div className="text-center mb-12">
           <Badge className="bg-purple-100 text-purple-700 hover:bg-purple-200 border-none mb-2">
             About Me
           </Badge>
@@ -33,8 +33,8 @@ export const ProfessionalSummary = () => {
           </h2>
         </div>
         
-        <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-start">
-          {/* Profile image column - moved to first position on desktop */}
+        <div className="grid gap-8 lg:grid-cols-2 lg:gap-16 items-center">
+          {/* Profile image column */}
           <div className="flex justify-center order-2 lg:order-1">
             <div className="relative w-full max-w-md overflow-hidden rounded-2xl shadow-xl border border-purple-100">
               <AspectRatio ratio={1 / 1} className="bg-purple-50">
@@ -50,7 +50,7 @@ export const ProfessionalSummary = () => {
           </div>
           
           {/* Content column */}
-          <div className="space-y-6 order-1 lg:order-2">
+          <div className="space-y-8 order-1 lg:order-2">
             <div className="text-gray-500 md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed">
               <p><b>DevOps-Aware Full-Stack Developer | AWS Certified Cloud Practitioner</b></p>
               <p>
@@ -62,7 +62,7 @@ export const ProfessionalSummary = () => {
             </div>
             
             {/* Certification badge */}
-            <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-4 p-4 bg-purple-50 rounded-lg">
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-6 p-5 bg-purple-50 rounded-lg">
               <Badge
                 variant="outline"
                 className="bg-purple-50 text-purple-700 border-purple-200"
