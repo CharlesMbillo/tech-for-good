@@ -63,7 +63,7 @@ export const ProfessionalSummary = () => {
                 <b>manufacturing Africa's IoT workforce through brutal pragmatism:<b>
             </p>
                 
-                    Fintech: ATM predictive maintenance bots cutting bank downtime by 40%
+                    <b>Fintech:</b> ATM predictive maintenance bots cutting bank downtime by 40%
 
                     Agritech: Solar-powered soil sensors triggering micro-irrigation via M-Pesa payments</li>
 
