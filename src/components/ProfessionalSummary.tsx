@@ -40,7 +40,6 @@ export const ProfessionalSummary = () => {
               <AspectRatio ratio={1 / 1} className="bg-purple-50">
                 <img
                   src="/src/components/images/charles_plp.jpg"
-                  loading="lazy"
                   alt="Charles Mbillo - Professional Web Developer"
                   className="w-full h-full object-cover rounded-2xl transition-transform duration-300 hover:scale-105 cursor-pointer"
                   onClick={openImageInNewTab}
