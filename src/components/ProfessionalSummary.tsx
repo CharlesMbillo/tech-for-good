@@ -69,7 +69,7 @@ export const ProfessionalSummary = () => {
                     <li><b>Smart Cities:</b> License plate recognition for matatu fleets using Edge Impulse-optimized models</li>
                 </ul>
 
-Our CBC-aligned labs deliver 80% hands-on training on the exact systems powering Africa's digital economy. This isn't education - it's industrial-grade skills injection."**
+              CBC-aligned labs deliver 80% hands-on training on the exact systems powering Africa's digital economy. This isn't education - it's industrial-grade skills injection."**
             </p>
           </div>
           <div className="flex justify-center">
