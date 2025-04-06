@@ -32,12 +32,15 @@ export const ProfessionalSummary = () => {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
               About Me
             </h2>
-            <p className="text-gray-500 md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed">
-            <p><b>DevOps-Aware Full-Stack Developer | AWS Certified Cloud Practitioner</b></p>
-            <p>Experienced in designing, building, and deploying <b>scalable web, mobile, and cloud solutions</b>
-               for emerging markets. Combines <b>3+ years of Full-Stack expertise</b> (frontend to infrastructure) 
-               with a focus on <b>performance, security, and cost-efficiency</b>. Passionate about <b>impact-driven technology</b>, 
-               delivering accessible, client-focused solutions that maximize resources and drive measurable outcomes.</p></p>
+            <div className="text-gray-500 md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed">
+              <p><b>DevOps-Aware Full-Stack Developer | AWS Certified Cloud Practitioner</b></p>
+              <p>
+                Experienced in designing, building, and deploying <b>scalable web, mobile, and cloud solutions</b>
+                for emerging markets. Combines <b>3+ years of Full-Stack expertise</b> (frontend to infrastructure) 
+                with a focus on <b>performance, security, and cost-efficiency</b>. Passionate about <b>impact-driven technology</b>, 
+                delivering accessible, client-focused solutions that maximize resources and drive measurable outcomes.
+              </p>
+            </div>
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
               <Badge
                 variant="outline"
@@ -56,23 +59,24 @@ export const ProfessionalSummary = () => {
               ></div>
             </div>
 
-            <p className="text-gray-500 md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed">
-            <p>"From LEGO Mindstorms prototypes to hardened Raspberry Pi/Arduino deployments, my focus is
+            <div className="text-gray-500 md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed">
+              <p><b>Robotics, Automation & AI/ML</b></p>
+              <p>
+                "From LEGO Mindstorms prototypes to hardened Raspberry Pi/Arduino deployments, my focus is
                 robotics that solve real problems. 
                 The Integrated Coding and Robotics Program (ICRPplus) with BLIS Global, we're 
-                <b>manufacturing Africa's IoT workforce through brutal pragmatism:<b>
-            </p>
-                
-                    <b>Fintech:</b> ATM predictive maintenance bots cutting bank downtime by 40%
-
-                    Agritech: Solar-powered soil sensors triggering micro-irrigation via M-Pesa payments</li>
-
-                    Healthtech: Offline-capable diagnostic robots for rural clinics (TensorFlow Lite on Jetson Nano)</li>
-
-                    Smart Cities: License plate recognition for matatu fleets using Edge Impulse-optimized
-                    models
+                <b> manufacturing Africa's IoT workforce through brutal pragmatism:</b>
+              </p>
+              <ul className="list-disc pl-5 mt-2">
+                <li>Fintech: ATM predictive maintenance bots cutting bank downtime by 40%</li>
+                <li>Agritech: Solar-powered soil sensors triggering micro-irrigation via M-Pesa payments</li>
+                <li>Healthtech: Offline-capable diagnostic robots for rural clinics (TensorFlow Lite on Jetson Nano)</li>
+                <li>Smart Cities: License plate recognition for matatu fleets using Edge Impulse-optimized models</li>
+              </ul>
+              <p className="mt-2">
                 CBC-aligned labs deliver 80% hands-on training on the exact systems powering Africa's digital economy. This isn't education - it's industrial-grade skills injection."
-            </p>
+              </p>
+            </div>
           </div>
           <div className="flex justify-center">
             <div className="relative w-full max-w-md overflow-hidden rounded-2xl shadow-xl border border-purple-100">
