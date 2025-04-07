@@ -151,8 +151,8 @@ export const Sidebar = () => {
                 {/* Profile Image - Circular with border */}
                 <div className="relative h-24 w-24 mb-3">
                   <img
-                    src={profileImage}
-                    alt="DevOps-Charles Mbillo}"
+                    src=./assets/charles_plp.jpg
+                    alt="DevOps-Charles Mbillo"
                     className="rounded-full h-full w-full object-cover border-4 border-purple-100" 
                     onError={(e) => {
                       (e.target as HTMLImageElement).src = '/default-profile.png';
