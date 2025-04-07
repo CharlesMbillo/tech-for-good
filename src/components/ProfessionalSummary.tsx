@@ -18,7 +18,7 @@ export const ProfessionalSummary = () => {
   }, []);
 
   const openImageInNewTab = () => {
-    window.open("/src/components/images/charles_plp.jpg", "_blank");
+    window.open("/src/assets/charles_plp.jpg", "_blank");
   };
 
   return (
@@ -39,8 +39,8 @@ export const ProfessionalSummary = () => {
             <div className="relative w-full max-w-md overflow-hidden rounded-2xl shadow-xl border border-purple-100">
               <AspectRatio ratio={1 / 1} className="bg-purple-50">
                 <img
-                  src="/src/components/images/charles_plp.jpg"
-                  alt="Charles Mbillo - Professional Web Developer"
+                  src="/src/assets/charles_plp.jpg"
+                  alt="Charles Mbillo - DevOps-aware Full-Stack Developer"
                   className="w-full h-full object-cover rounded-2xl transition-transform duration-300 hover:scale-105 cursor-pointer"
                   onClick={openImageInNewTab}
                 />

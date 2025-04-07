@@ -12,7 +12,7 @@ export const Hero = () => {
       {/* Abstract background pattern */}
       <div className="absolute inset-0 opacity-10 z-0">
         <img
-          src="/placeholder.svg"
+          src=""/src/assets/charles_plp.jpg""
           alt="Background pattern"
           className="w-full h-full object-cover"
           loading="lazy"
