@@ -35,7 +35,7 @@ export const Hero = () => {
 
           <p className="max-w-[700px] text-gray-500 md:text-xl">
 <<<<<<< HEAD
-          Bridging Technology and Real-World Impact.
+          Building scalable tech that solves real-world problems—bridging innovation and social impact.
 =======
            Bridging Technology and Real-World Impact.
 >>>>>>> 3d9c5210fc5ec340197f3c1f70d1cd19e70f3aa6
