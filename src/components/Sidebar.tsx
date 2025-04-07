@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { NAV_ITEMS } from "./constants";
-import profileImage from "@/assets/profile.jpg";
+import profileImage from "@/assets/charles_plp.jpg";
 
 export const Sidebar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
