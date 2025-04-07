@@ -1,102 +1,109 @@
-
 import { useState, useEffect, useRef } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { cn } from "@/lib/utils";
-import { useActiveHash } from "../hooks/useActiveHash";
-import { MobileToggleButton } from "./MobileToggleButton";
-import { SidebarContent } from "./sidebar/SidebarContent";
-
-// Lazy load Calendly
-const initCalendly = () => import("@/utils/calendly").then(module => module.initCalendly());
+import { motion } from "framer-motion";
+import { NAV_ITEMS } from "./constants";
+import profileImage from "@/assets/profile.jpg";
 
 export const Sidebar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const activeHash = useActiveHash();
+  const [isScrolled, setIsScrolled] = useState(false);
   const sidebarRef = useRef<HTMLDivElement>(null);
-  const toggleButtonRef = useRef<HTMLButtonElement>(null);
-  
-  const toggleSidebar = () => setIsOpen(!isOpen);
-  
-  // Focus management
-  useEffect(() => {
-    if (isOpen && sidebarRef.current) {
-      const firstFocusable = sidebarRef.current.querySelector('a[href]') as HTMLElement;
-      firstFocusable?.focus();
-    } else if (!isOpen && toggleButtonRef.current) {
-      toggleButtonRef.current.focus();
-    }
-  }, [isOpen]);
 
-  // Close sidebar when pressing Escape
+  // Handle scroll effect
   useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape' && isOpen) {
-        setIsOpen(false);
-      }
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
     };
-
-    document.addEventListener('keydown', handleKeyDown);
-    return () => document.removeEventListener('keydown', handleKeyDown);
-  }, [isOpen]);
-
-  const handleNavItemClick = () => {
-    if (isOpen) setIsOpen(false);
-  };
-
-  const handleBookCallClick = () => {
-    initCalendly();
-    if (isOpen) setIsOpen(false);
-  };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <>
-      {/* Mobile Sidebar Toggle */}
-      <MobileToggleButton 
-        ref={toggleButtonRef}
-        isOpen={isOpen}
-        onClick={toggleSidebar}
-      />
-
-      {/* Sidebar with Framer Motion animations */}
-      <motion.div 
+      {/* Desktop Sticky Sidebar */}
+      <motion.div
         ref={sidebarRef}
-        id="sidebar-navigation"
-        className={cn(
-          "fixed inset-y-0 left-0 z-40 w-64 bg-white border-r shadow-sm",
-          "md:relative md:translate-x-0" // Changed this line to ensure sidebar is visible on desktop
-        )}
-        initial={{ x: -320 }}
-        animate={{ 
-          x: isOpen || window.innerWidth >= 768 ? 0 : -320,
-          transition: { type: "spring", stiffness: 300, damping: 30 }
-        }}
-        exit={{ x: -320 }}
-        role="navigation"
-        aria-label="Main navigation"
+        className={`
+          hidden md:flex flex-col
+          fixed top-0 left-0 h-screen w-64
+          bg-white border-r border-gray-200
+          z-40 overflow-y-auto
+          ${isScrolled ? 'pt-4' : 'pt-8'}
+          transition-all duration-300
+        `}
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.4 }}
       >
-        <SidebarContent 
-          activeHash={activeHash} 
-          isOpen={isOpen} 
-          onNavItemClick={handleNavItemClick}
-          onBookCallClick={handleBookCallClick}
-        />
+        <div className="px-4">
+          {/* Profile Section */}
+          <div className={`flex flex-col items-center mb-6 ${isScrolled ? 'scale-90' : 'scale-100'} transition-transform`}>
+            <div className="relative h-20 w-20 mb-3">
+              <img
+                src={profileImage}
+                alt="Profile"
+                className="rounded-full h-full w-full object-cover border-4 border-purple-100 shadow-md"
+              />
+              <div className="absolute bottom-0 right-0 h-4 w-4 rounded-full bg-green-500 border-2 border-white"></div>
+            </div>
+            <h2 className="font-bold text-lg text-gray-800">Charles Mbillo</h2>
+            <p className="text-sm text-purple-600">Tech Solutions Developer</p>
+          </div>
+
+          {/* Navigation */}
+          <nav className="space-y-1">
+            {NAV_ITEMS.map((item) => (
+              <a
+                key={item.label}
+                href={item.href}
+                className="flex items-center gap-3 rounded-lg px-4 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-700 transition-colors"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.querySelector(item.href)?.scrollIntoView({ 
+                    behavior: 'smooth' 
+                  });
+                }}
+              >
+                <item.icon className="h-5 w-5" />
+                <span>{item.label}</span>
+              </a>
+            ))}
+          </nav>
+
+          {/* Contact Button (stays at bottom) */}
+          <div className="mt-auto mb-8 px-4">
+            <button 
+              className="w-full bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded-lg transition-colors shadow-md"
+              onClick={() => {/* Calendly integration */}}
+            >
+              Book Consultation
+            </button>
+          </div>
+        </div>
       </motion.div>
-      
-      {/* Animated Overlay with backdrop blur */}
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div 
-            className="fixed inset-0 z-30 bg-black/50 backdrop-blur-sm md:hidden" 
-            onClick={() => setIsOpen(false)}
-            role="presentation"
-            aria-hidden="true"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.2 }}
-          />
-        )}
-      </AnimatePresence>
+
+      {/* Mobile Floating Button */}
+      <div className="fixed bottom-6 right-6 z-50 md:hidden">
+        <button
+          className="h-14 w-14 rounded-full bg-purple-600 text-white shadow-xl flex items-center justify-center"
+          onClick={() => document.getElementById('mobile-sidebar')?.classList.toggle('hidden')}
+        >
+          <Menu className="h-6 w-6" />
+        </button>
+      </div>
+
+      {/* Mobile Sidebar */}
+      <div
+        id="mobile-sidebar"
+        className="fixed inset-0 bg-black bg-opacity-50 z-40 hidden md:hidden"
+      >
+        <motion.div 
+          className="absolute top-0 left-0 h-full w-72 bg-white shadow-xl"
+          initial={{ x: -300 }}
+          animate={{ x: 0 }}
+          exit={{ x: -300 }}
+        >
+          {/* Mobile sidebar content */}
+        </motion.div>
+      </div>
     </>
   );
 };
