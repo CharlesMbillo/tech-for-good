@@ -38,7 +38,7 @@ export const Hero = () => {
 
           <div className="flex flex-col gap-2 min-[400px]:flex-row mt-4">
             <Button className="bg-purple-700 hover:bg-purple-800">
-              <a href="./charles_resume.pdf">View Resume </a>
+              <a href=".src/components/Resume for DevOps-aware Full-Stack Developer-1.pdf">View Resume </a>
             </Button>
             <Button
               variant="outline"
