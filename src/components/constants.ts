@@ -16,4 +16,4 @@ import {
     { icon: Briefcase, label: "Services", href: "#services" },
     { icon: BookOpen, label: "Projects", href: "#projects" },
     { icon: Mail, label: "Contact", href: "#contact" },
-  ];
+  ]; as const;
