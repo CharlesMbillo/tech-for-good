@@ -63,11 +63,11 @@ export const Sidebar = () => {
         id="sidebar-navigation"
         className={cn(
           "fixed inset-y-0 left-0 z-40 w-64 bg-white border-r shadow-sm",
-          "md:sticky md:top-16 md:h-[calc(100vh-4rem)]"
+          "md:relative md:translate-x-0" // Changed this line to ensure sidebar is visible on desktop
         )}
         initial={{ x: -320 }}
         animate={{ 
-          x: isOpen ? 0 : -320,
+          x: isOpen || window.innerWidth >= 768 ? 0 : -320,
           transition: { type: "spring", stiffness: 300, damping: 30 }
         }}
         exit={{ x: -320 }}

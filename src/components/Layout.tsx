@@ -43,8 +43,10 @@ export const Layout = ({ children }: LayoutProps) => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100">
       <Navbar />
-      <div className="flex">
-        <Sidebar />
+      <div className="flex relative">
+        <div className="md:w-64 md:block">
+          <Sidebar />
+        </div>
         <main className="flex-1">{children}</main>
       </div>
       <Footer />
