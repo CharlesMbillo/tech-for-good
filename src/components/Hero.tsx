@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { initCalendly } from "@/utils/calendly";
 import { Badge } from "@/components/ui/badge";
@@ -12,7 +13,7 @@ export const Hero = () => {
       {/* Abstract background pattern */}
       <div className="absolute inset-0 opacity-10 z-0">
         <img
-          src="/placeholder.svg"
+          src="/src/assets/charles_plp.jpg"
           alt="Background pattern"
           className="w-full h-full object-cover"
           loading="lazy"
@@ -33,12 +34,20 @@ export const Hero = () => {
           </h1>
 
           <p className="max-w-[700px] text-gray-500 md:text-xl">
+<<<<<<< HEAD
           Bridging Technology and Real-World Impact.
+=======
+           Bridging Technology and Real-World Impact.
+>>>>>>> 3d9c5210fc5ec340197f3c1f70d1cd19e70f3aa6
           </p>
 
           <div className="flex flex-col gap-2 min-[400px]:flex-row mt-4">
             <Button className="bg-purple-700 hover:bg-purple-800">
+<<<<<<< HEAD
               <a href=".src/components/Resume for DevOps-aware Full-Stack Developer-1.pdf">View Resume </a>
+=======
+              <a href="./Resume for DevOsps-aware Full-Stack Developer-2.pdf">View Resume </a>
+>>>>>>> 3d9c5210fc5ec340197f3c1f70d1cd19e70f3aa6
             </Button>
             <Button
               variant="outline"
