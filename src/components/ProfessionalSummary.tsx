@@ -85,8 +85,8 @@ export const ProfessionalSummary = () => {
               "From LEGO Mindstorms prototypes to hardened Jetson Nano/Raspberry Pi/Arduino deployments 
               using Edge Impulse-optimized TinyML models. My passionate focus is on real-life solutions 
               like solar-powered edge devices running TensorFlow Lite Micro for agricultural vision systems and predictive maintenance—proving that micro-scale AI can drive macro-level impact
-              even in low-connectivity environments. 
-              The Integrated Coding and Robotics Program (ICRPplus) with BLIS Global, we're 
+              even in low-connectivity environments. </p>
+              <p>The Integrated Coding and Robotics Program (ICRPplus) with BLIS Global, we're 
               <b> manufacturing Africa's IoT workforce through brutal pragmatism:</b>
               </p>
               <ul className="list-disc pl-5 mt-2">
