@@ -99,7 +99,7 @@ export const ProfessionalSummary = () => {
               <p className="mt-2">
                 CBC-aligned labs deliver 80% hands-on training on the exact systems powering Africa's digital economy.
                 <b>"This isn't education - it's industrial-grade skills injection."</b> 
-                Join us in fostering a culture of creativity and innovation. <b>Let's empower the world, one makerspace at a time!</b>
+                Join us in fostering a culture of creativity and innovation.<b>Let's empower the world, one makerspace at a time!</b>
               </p>
             </div>
           </div>
