@@ -80,6 +80,7 @@ export const ProfessionalSummary = () => {
 
             <div className="text-gray-500 md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed">
               <p><b>Robotics, Automation & AI/ML</b></p>
+              <p><span>Igniting the Future, One Line of Code at a Time! 🚀</span></p>
               <p>
               "From LEGO Mindstorms prototypes to hardened Jetson Nano/Raspberry Pi/Arduino deployments 
               using Edge Impulse-optimized TinyML models. My passionate focus is on real-life solutions 
@@ -89,10 +90,13 @@ export const ProfessionalSummary = () => {
               <b> manufacturing Africa's IoT workforce through brutal pragmatism:</b>
               </p>
               <ul className="list-disc pl-5 mt-2">
-                <li>Fintech: ATM predictive maintenance bots cutting bank downtime by 40%</li>
-                <li>Agritech: Solar-powered soil sensors triggering micro-irrigation via M-Pesa payments</li>
-                <li>Healthtech: Offline-capable diagnostic robots for rural clinics (TensorFlow Lite on Jetson Nano)</li>
-                <li>Smart Cities: License plate recognition for matatu fleets using Edge Impulse-optimized models</li>
+                <li>we're building more than just robots and circuits – we're building dreams. </li>
+                <li>Our "Coding and Robotics Makerspaces" are where young minds transform ideas into reality, where innovation meets hands-on learning.</li>
+                <li>This isn't just about technology; it's about empowering the next generation to shape their world.</li>
+                <li>We believe in the power of education to unlock potential, and we're committed to providing the 
+                  resources and inspiration needed to thrive in a tech-driven world. 
+                  Join us in fostering a culture of creativity and innovation. <span>Let's empower the world,
+                  one makerspace at a time!<span></li>
               </ul>
               <p className="mt-2">
                 CBC-aligned labs deliver 80% hands-on training on the exact systems powering Africa's digital economy. This isn't education - it's industrial-grade skills injection."
