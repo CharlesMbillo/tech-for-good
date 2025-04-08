@@ -44,9 +44,9 @@ export const Layout = ({ children }: LayoutProps) => {
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100">
       <Navbar />
       <div className="flex relative">
-        <div className="md:w-64 md:block">
+        <aside className="md:block shrink-0">
           <Sidebar />
-        </div>
+        </aside>
         <main className="flex-1">{children}</main>
       </div>
       <Footer />
