@@ -86,8 +86,8 @@ export const ProfessionalSummary = () => {
               using Edge Impulse-optimized TinyML models. My passionate focus is on real-life solutions 
               like solar-powered edge devices running TensorFlow Lite Micro for agricultural vision systems and predictive maintenance—proving that micro-scale AI can drive macro-level impact
               even in low-connectivity environments. </p>
-              <p>The Integrated Coding and Robotics Program (ICRPplus) with BLIS Global, we're 
-              <b> manufacturing Africa's IoT workforce through brutal pragmatism:</b>
+              <p>BLIS Global, The Integrated Coding and Robotics Program (ICRPplus) with, 
+              <b>we're manufacturing Africa's IoT workforce through brutal pragmatism:</b>
               </p>
               <ul className="list-disc pl-5 mt-2">
                 <li>we're building more than just robots and circuits, we're building dreams. </li>
@@ -95,11 +95,12 @@ export const ProfessionalSummary = () => {
                 <li>This isn't just about technology; it's about empowering the next generation to shape their world.</li>
                 <li>We believe in the power of education to unlock potential, and we're committed to providing the 
                   resources and inspiration needed to thrive in a tech-driven world. 
-                  Join us in fostering a culture of creativity and innovation. <span>Let's empower the world,
-                  one makerspace at a time!</span></li>
+                 
               </ul>
               <p className="mt-2">
-                CBC-aligned labs deliver 80% hands-on training on the exact systems powering Africa's digital economy. This isn't education - it's industrial-grade skills injection."
+                CBC-aligned labs deliver 80% hands-on training on the exact systems powering Africa's digital economy.
+                <b>"This isn't education - it's industrial-grade skills injection."</b> 
+                Join us in fostering a culture of creativity and innovation. <b>Let's empower the world, one makerspace at a time!</b></li>
               </p>
             </div>
           </div>
