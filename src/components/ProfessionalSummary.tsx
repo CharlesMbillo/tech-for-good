@@ -80,7 +80,7 @@ export const ProfessionalSummary = () => {
 
             <div className="text-gray-500 md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed">
               <p><b>Robotics, Automation & AI/ML</b></p>
-              <p><span>Igniting the Future, One Line of Code at a Time! 🚀</span></p>
+              <p><b>Igniting the Future, One Line of Code at a Time! 🚀</b></p>
               <p>
               "From LEGO Mindstorms prototypes to hardened Jetson Nano/Raspberry Pi/Arduino deployments 
               using Edge Impulse-optimized TinyML models. My passionate focus is on real-life solutions 
@@ -96,7 +96,7 @@ export const ProfessionalSummary = () => {
                 <li>We believe in the power of education to unlock potential, and we're committed to providing the 
                   resources and inspiration needed to thrive in a tech-driven world. 
                   Join us in fostering a culture of creativity and innovation. <span>Let's empower the world,
-                  one makerspace at a time!<span></li>
+                  one makerspace at a time!</span></li>
               </ul>
               <p className="mt-2">
                 CBC-aligned labs deliver 80% hands-on training on the exact systems powering Africa's digital economy. This isn't education - it's industrial-grade skills injection."
