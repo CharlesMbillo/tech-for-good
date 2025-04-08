@@ -90,7 +90,7 @@ export const ProfessionalSummary = () => {
               <b> manufacturing Africa's IoT workforce through brutal pragmatism:</b>
               </p>
               <ul className="list-disc pl-5 mt-2">
-                <li>we're building more than just robots and circuits – we're building dreams. </li>
+                <li>we're building more than just robots and circuits, we're building dreams. </li>
                 <li>Our "Coding and Robotics Makerspaces" are where young minds transform ideas into reality, where innovation meets hands-on learning.</li>
                 <li>This isn't just about technology; it's about empowering the next generation to shape their world.</li>
                 <li>We believe in the power of education to unlock potential, and we're committed to providing the 
