@@ -63,7 +63,7 @@ export const Sidebar = () => {
         id="sidebar-navigation"
         className={cn(
           "fixed inset-y-0 left-0 z-40 w-64 bg-white border-r shadow-sm",
-          "md:sticky md:top-0 md:h-screen md:translate-x-0" // Changed to sticky on desktop
+          "md:sticky md:top-0 md:h-screen"// Changed to sticky on desktop
         )}
         initial={{ x: -320 }}
         animate={{ 
