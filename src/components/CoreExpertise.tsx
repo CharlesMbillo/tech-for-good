@@ -6,7 +6,14 @@ export const CoreExpertise = () => {
   const expertiseAreas = [
     {
       title: "Full-Stack Web & Mobile Development",
-      badges: ["MERN STACK", "HTML/CSS/JS", "Node.js", "React Native", "Django"],
+      badges: [
+        "MERN STACK",
+        "HTML/CSS/JS",
+        "Node.js",
+        "React Native",
+        "sqlite",
+        "Django",
+      ],
     },
     {
       title:
@@ -15,7 +22,14 @@ export const CoreExpertise = () => {
     },
     {
       title: "Data Solutions Modelling",
-      badges: ["Excel", "SQL", "NoSQL", "MongoDB", "Power BI"],
+      badges: [
+        "Excel",
+        "PostgreSQL",
+        "mySQL",
+        "MongoDB",
+        "Kobo/ODK",
+        "Power BI",
+      ],
     },
     {
       title: "Enterprise IT Consulting",
