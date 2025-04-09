@@ -100,8 +100,11 @@ export const ProfessionalSummary = () => {
                 Impulse-optimized TinyML models. My passionate focus is on
                 real-life solutions like solar-powered edge devices running
                 TensorFlow Lite Micro for agricultural vision systems and
-                predictive maintenance—proving that micro-scale AI can drive
-                macro-level impact even in low-connectivity environments.{" "}
+                predictive maintenance—proving{" "}
+                <b>
+                  that micro-scale AI can drive macro-level impact even in
+                  low-connectivity environments.
+                </b>{" "}
               </p>
               <p>
                 BLIS Global-Kenya and The Integrated Coding and Robotics Program
