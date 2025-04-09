@@ -13,13 +13,23 @@ export const CoreExpertise = () => {
         "Node.js",
         "React Native",
         "sqlite",
-        "Django",
+        "Django/Flask",
       ],
     },
     {
       title:
         "Cloud Computing (focus on Cloud Native technologies like microservices, containers, and container orchestration)",
-      badges: ["AWS", "Docker", "Kubernetes", "OpenStack"],
+      badges: [
+        "Microservices Architecture: (Decoupled services with single responsibilities, API-driven communication (REST/gRPC), Independent scaling of components, Resilience patterns (circuit breakers, retries))",
+        "Containerization  & Orchestration: (Docker, Kubbernetes)",
+        "Infrastructure as Code IaC: (Terraform, AWS CloudFormation)",
+        "Cloud Platforms (AWS/Openstack): (Compute: EC2, Lambda, ECS/EKS)(Storage: S3, EBS, EFS)(Storage: S3, EBS, EFS)(Networking: VPC, ALB/NLB, Route 53)(Database: RDS, DynamoDB, ElastiCache)",
+        "CI/CD Pipelines: (GitHub Actions: Integrated CI/CD) (Jenkins: Customizable pipelines)",
+        "Operational Excellence:Linux Administration (Bash scripting for automation, Systemd for service management, Performance tuning (sysctl), Security hardening (SELinux, iptables))",
+        "Configuration Management: (YAML/JSON for declarative configs, Helm for Kubernetes packaging, Ansible for server provisioning)",
+
+        "Emerging Trends: Serverless architecture (Lambda, Cloud Functions), Edge computing (CloudFront, Lambda@Edge)",
+      ],
     },
     {
       title: "Data Solutions Modelling",
