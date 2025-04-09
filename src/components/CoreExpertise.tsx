@@ -9,6 +9,7 @@ export const CoreExpertise = () => {
       badges: [
         "MERN STACK",
         "HTML/CSS/JS",
+        "Bootstrap/Tailwind CSS",
         "Node.js",
         "React Native",
         "sqlite",
