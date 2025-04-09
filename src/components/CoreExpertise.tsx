@@ -6,7 +6,7 @@ export const CoreExpertise = () => {
   const expertiseAreas = [
     {
       title: "Full-Stack Web & Mobile Development",
-      badges: ["React", "Next.js", "Node.js", "React Native"],
+      badges: ["MERN STACK", "HTML/CSS/JS", "Node.js", "React Native", "Django"],
     },
     {
       title:
