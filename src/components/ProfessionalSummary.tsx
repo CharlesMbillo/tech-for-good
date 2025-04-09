@@ -59,7 +59,7 @@ export const ProfessionalSummary = () => {
               <p>
                 Experienced in designing, building, and deploying{" "}
                 <b>scalable web, mobile, and cloud solutions</b>
-                for emerging markets. Combines{" "}
+                  for emerging markets. Combines{" "}
                 <b>3+ years of Full-Stack expertise</b> (frontend to
                 infrastructure) with a focus on{" "}
                 <b>performance, security, and cost-efficiency</b>. Passionate
