@@ -5,18 +5,6 @@ import { Badge } from "@/components/ui/badge";
 export const CoreExpertise = () => {
   const expertiseAreas = [
     {
-      title: "Full-Stack Web & Mobile Development",
-      badges: [
-        "MERN STACK",
-        "HTML/CSS/JS",
-        "Bootstrap/Tailwind CSS",
-        "Node.js",
-        "React Native",
-        "sqlite",
-        "Django/Flask",
-      ],
-    },
-    {
       title:
         "Cloud Computing (focus on Cloud Native technologies like microservices, containers, and container orchestration)",
       badges: [
@@ -32,7 +20,7 @@ export const CoreExpertise = () => {
       ],
     },
     {
-      title: "Data Solutions Modelling Expertise",
+      title: "Database and Data Analysis Technologies Expertise",
       badges: [
         "Database Technologies: Relational Databases: (PostgreSQL:Advanced open-source RDBMS with JSON support), (MySQL: Popular relational database for web applications), (SQL Optimization: Query tuning, indexing strategies), (Schema Design: Normalization, ER modeling)",
         "Database Technologies: NoSQL Solutions: (MongoDB: Document-oriented database), (Flexible Schemas: Dynamic data structures), (Aggregation Framework: Complex data processing), (Atlas: Managed cloud database service)",
@@ -41,6 +29,20 @@ export const CoreExpertise = () => {
         "Spreadsheet Mastery: Excel Advanced Features: (Power Query (ETL capabilities)), (PivotTables and advanced charting), (VBA scripting for automation), (Complex formulas (INDEX-MATCH, array formulas))",
         "Data Cleaning: Transformation techniques",
         "Financial Modeling: Forecasting, scenario analysis",
+        "Data Workflow Integration: (ETL Processes: Extract, Transform, Load pipelines), (API Connections: Live data feeds to BI tools), (Data Governance: Quality control measures), (Cross-Platform Integration: Connecting Excel to databases)",
+        "Emerging Skills: (Open Data Kit (ODK) Cloud integrations), (PostGIS for geospatial data in PostgreSQL), (MongoDB Atlas Charts for embedded visualizations), (Power BI Premium capabilities), (Excel Power Pivot for big data analysis)",
+      ],
+    },
+    {
+      title: "Full-Stack Web & Mobile Development",
+      badges: [
+        "MERN STACK",
+        "HTML/CSS/JS",
+        "Bootstrap/Tailwind CSS",
+        "Node.js",
+        "React Native",
+        "sqlite",
+        "Django/Flask",
       ],
     },
     {
