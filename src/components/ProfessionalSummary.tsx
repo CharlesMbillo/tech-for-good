@@ -87,11 +87,11 @@ export const ProfessionalSummary = () => {
               like solar-powered edge devices running TensorFlow Lite Micro for agricultural vision systems and predictive maintenance—proving that micro-scale AI can drive macro-level impact
               even in low-connectivity environments. </p>
               <p>BLIS Global, The Integrated Coding and Robotics Program (ICRPplus) with, 
-              <b>we're manufacturing Africa's IoT workforce through brutal pragmatism:</b>
+              <b> we're manufacturing Africa's IoT workforce through brutal pragmatism:</b>
               </p>
               <ul className="list-disc pl-5 mt-2">
-                <li>we're building more than just robots and circuits, we're building dreams. </li>
-                <li>Our "Coding and Robotics Makerspaces" are where young minds transform ideas into reality, where innovation meets hands-on learning.</li>
+                <li>We're building more than just robots and circuits, we're building dreams. </li>
+                <li>Our <b>"Coding and Robotics Makerspaces"</b> are where young minds transform ideas into reality, where innovation meets hands-on learning.</li>
                 <li>This isn't just about technology; it's about empowering the next generation to shape their world.</li>
                 <li>We believe in the power of education to unlock potential, and we're committed to providing the 
                     resources and inspiration needed to thrive in a tech-driven world. </li>
