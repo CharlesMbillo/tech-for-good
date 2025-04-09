@@ -32,14 +32,15 @@ export const CoreExpertise = () => {
       ],
     },
     {
-      title: "Data Solutions Modelling",
+      title: "Data Solutions Modelling Expertise",
       badges: [
-        "Excel",
-        "PostgreSQL",
-        "mySQL",
-        "MongoDB",
-        "Kobo/ODK",
-        "Power BI",
+        "Database Technologies: Relational Databases: (PostgreSQL:Advanced open-source RDBMS with JSON support), (MySQL: Popular relational database for web applications), (SQL Optimization: Query tuning, indexing strategies), (Schema Design: Normalization, ER modeling)",
+        "Database Technologies: NoSQL Solutions: (MongoDB: Document-oriented database), (Flexible Schemas: Dynamic data structures), (Aggregation Framework: Complex data processing), (Atlas: Managed cloud database service)",
+        "Data Collection & Analysis: Data Collection Tools: (Survey Design: Form logic, validation), (Field Data Management: Offline-capable solutions), (Data Integration: API connections to databases)",
+        "Business Intelligence: (Power BI: Interactive dashboards and reports), (DAX Formulas: Advanced calculations), (Data Modeling: Star schemas, relationships), (Visual Storytelling: Effective data presentation)",
+        "Spreadsheet Mastery: Excel Advanced Features: (Power Query (ETL capabilities)), (PivotTables and advanced charting), (VBA scripting for automation), (Complex formulas (INDEX-MATCH, array formulas))",
+        "Data Cleaning: Transformation techniques",
+        "Financial Modeling: Forecasting, scenario analysis",
       ],
     },
     {
