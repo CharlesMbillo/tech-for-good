@@ -104,8 +104,8 @@ export const ProfessionalSummary = () => {
                 macro-level impact even in low-connectivity environments.{" "}
               </p>
               <p>
-                BLIS Global, The Integrated Coding and Robotics Program
-                (ICRPplus) with,
+                BLIS Global-Kenya and The Integrated Coding and Robotics Program
+                (ICRPplus),
                 <b>
                   {" "}
                   we're manufacturing Africa's IoT workforce through brutal
