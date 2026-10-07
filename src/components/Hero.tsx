@@ -33,13 +33,12 @@ export const Hero = () => {
           </h1>
 
           <p className="max-w-[700px] text-gray-500 md:text-xl">
-
-          Building scalable tech that solves real-world problems—bridging innovation and social impact.
+            Building scalable tech that solves real-world problems—bridging innovation and social impact.
           </p>
 
           <div className="flex flex-col gap-2 min-[400px]:flex-row mt-4">
             <Button className="bg-purple-700 hover:bg-purple-800">
-            <a href="./View Charles Mbillo.pdf">View Resume </a>
+              <a href="/Charles%20Mbillo.pdf">View Resume</a>
             </Button>
             <Button
               variant="outline"
