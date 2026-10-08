@@ -1,138 +1,245 @@
 
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { ExternalLink, Github } from "lucide-react";
+import { Link } from "react-router-dom";
+
+const jimwasTech = [
+  "React",
+  "TypeScript",
+  "Supabase",
+  "PostgreSQL",
+  "PWA",
+  "IndexedDB",
+  "RBAC",
+  "Payments",
+  "Inventory",
+  "Offline Sync",
+];
+
+const rentflowTech = [
+  "React",
+  "TypeScript",
+  "Supabase",
+  "Financial Workflows",
+  "Reconciliation",
+  "Property Management",
+];
 
 export const ProjectsSection = () => {
-  const openImageInNewTab = (imageUrl: string) => {
-    window.open(imageUrl, '_blank');
-  };
-
   return (
-    <section id="projects" className="py-16 bg-purple-50">
-      <div className="container px-4 md:px-6">
-        <div className="mb-10 text-center">
-          <div className="inline-block rounded-lg bg-purple-100 px-3 py-1 text-sm text-purple-700 mb-4">
-            Projects
-          </div>
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">
-            Featured Projects
+    <section id="work" className="section-py bg-white" aria-labelledby="work-heading">
+      <div className="section-container">
+        {/* Heading */}
+        <div className="mb-14">
+          <p className="section-label">Selected Work</p>
+          <h2 id="work-heading" className="text-3xl md:text-4xl font-bold text-ink tracking-tight mb-3">
+            Real systems. Real problems.
           </h2>
-          <p className="mx-auto max-w-3xl text-gray-500 md:text-xl mb-8">
-            Current Ongoing ...
+          <p className="text-ink-muted max-w-2xl">
+            Practical engineering decisions built around operational reliability, financial accuracy
+            and the needs of the people running the business.
           </p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {/* Community Based Projects */}
-          <Card className="overflow-hidden border-purple-100 transition-all hover:shadow-lg">
-            <div 
-              className="h-48 overflow-hidden cursor-pointer" 
-              onClick={() => openImageInNewTab("https://images.unsplash.com/photo-1531297484001-80022131f5a1")}
-            >
-              <img
-                src="https://images.unsplash.com/photo-1531297484001-80022131f5a1"
-                alt="Community Based Projects"
-                className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-              />
+        {/* Jimwas POS — Flagship */}
+        <article
+          className="mb-12 rounded-2xl border border-surface-border overflow-hidden"
+          aria-labelledby="jimwas-heading"
+        >
+          <div className="grid grid-cols-1 lg:grid-cols-5">
+            {/* Visual panel */}
+            <div className="lg:col-span-2 bg-ink p-8 flex flex-col justify-between min-h-[280px]">
+              <div>
+                <p className="text-xs text-brand font-semibold tracking-widest uppercase mb-3">
+                  Flagship Project · Production POS
+                </p>
+                <h3 id="jimwas-heading" className="text-2xl md:text-3xl font-bold text-white mb-4 tracking-tight">
+                  Jimwas POS
+                </h3>
+                <p className="text-white/70 text-sm leading-relaxed">
+                  Point-of-sale and inventory platform built for transaction integrity,
+                  offline operation, payments, stock management and reliable synchronisation.
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-2 mt-6">
+                {jimwasTech.map((t) => (
+                  <Badge
+                    key={t}
+                    variant="outline"
+                    className="border-white/20 text-white/80 bg-white/5 text-xs"
+                  >
+                    {t}
+                  </Badge>
+                ))}
+              </div>
             </div>
-            <CardContent className="p-6">
-              <h3 className="text-xl font-bold mb-4">Community Based</h3>
-              <ul className="space-y-2 mb-6 list-disc pl-5">
-                <li>USSD Guard Monitoring System</li>
-                <li>Parish Census and Automation</li>
-                <li>Library Management System</li>
-              </ul>
-              <Button 
-                className="w-full bg-purple-700 hover:bg-purple-800"
-                onClick={() => openImageInNewTab("https://images.unsplash.com/photo-1531297484001-80022131f5a1")}
-              >
-                View Project
-              </Button>
-            </CardContent>
-          </Card>
 
-          {/* EdTech Projects */}
-          <Card className="overflow-hidden border-purple-100 transition-all hover:shadow-lg">
-            <div 
-              className="h-48 overflow-hidden cursor-pointer"
-              onClick={() => openImageInNewTab("https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d")}
-            >
-              <img
-                src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
-                alt="EdTech Projects"
-                className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-              />
-            </div>
-            <CardContent className="p-6">
-              <h3 className="text-xl font-bold mb-4">EdTech</h3>
-              <ul className="space-y-2 mb-6 list-disc pl-5">
-                <li>Offline Digital Content CBC</li>
-                <li>Online Digital Content CBC</li>
-                <li>Learning Management System</li>
-              </ul>
-              <Button 
-                className="w-full bg-purple-700 hover:bg-purple-800"
-                onClick={() => openImageInNewTab("https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d")}
-              >
-                View Project
-              </Button>
-            </CardContent>
-          </Card>
+            {/* Detail panel */}
+            <div className="lg:col-span-3 p-8 flex flex-col justify-between bg-white">
+              <div className="space-y-5">
+                <div>
+                  <h4 className="text-xs font-semibold text-ink-muted tracking-widest uppercase mb-2">
+                    The Problem
+                  </h4>
+                  <p className="text-ink text-sm leading-relaxed">
+                    Retail and hospitality businesses needed a system that could process sales,
+                    track inventory and handle payments reliably — including during connectivity
+                    interruptions. Reconciliation of transactions and stock movements had to be
+                    auditable after the fact.
+                  </p>
+                </div>
 
-          {/* AI & Robotics Projects */}
-          <Card className="overflow-hidden border-purple-100 transition-all hover:shadow-lg">
-            <div 
-              className="h-48 overflow-hidden cursor-pointer"
-              onClick={() => openImageInNewTab("https://images.unsplash.com/photo-1555255707-c07966088b7b")}
-            >
-              <img
-                src="https://images.unsplash.com/photo-1555255707-c07966088b7b"
-                alt="AI & Robotics Projects"
-                className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-              />
-            </div>
-            <CardContent className="p-6">
-              <h3 className="text-xl font-bold mb-4">AI & Robotics</h3>
-              <ul className="space-y-2 mb-6 list-disc pl-5">
-                <li>Predictive Analytics Dashboard</li>
-                <li>Computer Vision for Quality Control</li>
-                <li>IoT Home Automation System</li>
-              </ul>
-              <Button 
-                className="w-full bg-purple-700 hover:bg-purple-800"
-                onClick={() => openImageInNewTab("https://images.unsplash.com/photo-1555255707-c07966088b7b")}
-              >
-                View Project
-              </Button>
-            </CardContent>
-          </Card>
+                <div>
+                  <h4 className="text-xs font-semibold text-ink-muted tracking-widest uppercase mb-2">
+                    Engineering Focus
+                  </h4>
+                  <ul className="text-sm text-ink space-y-1.5">
+                    <li className="flex items-start gap-2">
+                      <span className="text-brand mt-0.5 flex-shrink-0">—</span>
+                      <span>Transaction idempotency to prevent duplicate sale records</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-brand mt-0.5 flex-shrink-0">—</span>
+                      <span>Offline-first via IndexedDB with deterministic sync on reconnect</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-brand mt-0.5 flex-shrink-0">—</span>
+                      <span>Stock reversal on voided sales with auditable movement records</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-brand mt-0.5 flex-shrink-0">—</span>
+                      <span>Role-based access control across cashier, manager and admin roles</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-brand mt-0.5 flex-shrink-0">—</span>
+                      <span>Payment account handling and delivery-fee lifecycle tracking</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
 
-          {/* Fintech Projects */}
-          <Card className="overflow-hidden border-purple-100 transition-all hover:shadow-lg">
-            <div 
-              className="h-48 overflow-hidden cursor-pointer"
-              onClick={() => openImageInNewTab("https://images.unsplash.com/photo-1518770660439-4636190af475")}
-            >
-              <img
-                src="https://images.unsplash.com/photo-1518770660439-4636190af475"
-                alt="Fintech Projects"
-                className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-              />
+              <div className="flex flex-wrap gap-3 mt-6 pt-6 border-t border-surface-border">
+                <Link to="/projects/jimwas-pos">
+                  <Button
+                    size="sm"
+                    className="bg-ink text-white hover:bg-brand transition-colors font-medium"
+                  >
+                    View Case Study
+                  </Button>
+                </Link>
+                <a
+                  href="https://github.com/CharlesMbillo"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Jimwas POS on GitHub (opens in new tab)"
+                >
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="border-surface-border text-ink-muted hover:text-ink font-medium gap-1.5"
+                  >
+                    <Github className="h-4 w-4" aria-hidden="true" />
+                    GitHub
+                  </Button>
+                </a>
+              </div>
             </div>
-            <CardContent className="p-6">
-              <h3 className="text-xl font-bold mb-4">Fintech</h3>
-              <ul className="space-y-2 mb-6 list-disc pl-5">
-                <li>USSD Based Sacco Transactions App</li>
-              </ul>
-              <Button 
-                className="w-full bg-purple-700 hover:bg-purple-800"
-                onClick={() => openImageInNewTab("https://images.unsplash.com/photo-1518770660439-4636190af475")}
-              >
-                View Project
-              </Button>
-            </CardContent>
-          </Card>
-        </div>
+          </div>
+        </article>
+
+        {/* RentFlow */}
+        <article
+          className="rounded-2xl border border-surface-border overflow-hidden"
+          aria-labelledby="rentflow-heading"
+        >
+          <div className="grid grid-cols-1 lg:grid-cols-5">
+            {/* Visual panel */}
+            <div className="lg:col-span-2 bg-brand p-8 flex flex-col justify-between min-h-[260px]">
+              <div>
+                <p className="text-xs text-white/60 font-semibold tracking-widest uppercase mb-3">
+                  Project · Housing & Finance
+                </p>
+                <h3 id="rentflow-heading" className="text-2xl md:text-3xl font-bold text-white mb-4 tracking-tight">
+                  RentFlow
+                </h3>
+                <p className="text-white/80 text-sm leading-relaxed">
+                  Housing management and financial operations platform covering property
+                  administration, rent workflows and reconciliation.
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-2 mt-6">
+                {rentflowTech.map((t) => (
+                  <Badge
+                    key={t}
+                    variant="outline"
+                    className="border-white/30 text-white/90 bg-white/10 text-xs"
+                  >
+                    {t}
+                  </Badge>
+                ))}
+              </div>
+            </div>
+
+            {/* Detail panel */}
+            <div className="lg:col-span-3 p-8 flex flex-col justify-between bg-white">
+              <div className="space-y-5">
+                <div>
+                  <h4 className="text-xs font-semibold text-ink-muted tracking-widest uppercase mb-2">
+                    Deployment Context
+                  </h4>
+                  <p className="text-ink text-sm leading-relaxed">
+                    Built for a 74-unit residential property deployment in Nairobi. Covers tenant
+                    workflows, rent collection, Equity Biller payment reconciliation and
+                    operational reporting for property administration.
+                  </p>
+                </div>
+
+                <div>
+                  <h4 className="text-xs font-semibold text-ink-muted tracking-widest uppercase mb-2">
+                    Key Capabilities
+                  </h4>
+                  <ul className="text-sm text-ink space-y-1.5">
+                    <li className="flex items-start gap-2">
+                      <span className="text-brand mt-0.5 flex-shrink-0">—</span>
+                      <span>Rent payment workflows with Equity Biller reconciliation</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-brand mt-0.5 flex-shrink-0">—</span>
+                      <span>74-unit property and tenant management operations</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-brand mt-0.5 flex-shrink-0">—</span>
+                      <span>Financial reporting and arrears tracking</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-brand mt-0.5 flex-shrink-0">—</span>
+                      <span>Transaction audit trail and reconciliation reporting</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="flex flex-wrap gap-3 mt-6 pt-6 border-t border-surface-border">
+                <a
+                  href="https://github.com/CharlesMbillo"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="RentFlow on GitHub (opens in new tab)"
+                >
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="border-surface-border text-ink-muted hover:text-ink font-medium gap-1.5"
+                  >
+                    <Github className="h-4 w-4" aria-hidden="true" />
+                    GitHub
+                  </Button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
   );

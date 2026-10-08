@@ -1,22 +1,26 @@
 
 import { Layout } from "@/components/Layout";
 import { Hero } from "@/components/Hero";
-import { ProfessionalSummary } from "@/components/ProfessionalSummary";
-import { CoreExpertise } from "@/components/CoreExpertise";
-import { TechnicalFocus } from "@/components/TechnicalFocus";
-import { ServicesSection } from "@/components/ServicesSection";
+import { CapabilitiesSection } from "@/components/CapabilitiesSection";
 import { ProjectsSection } from "@/components/ProjectsSection";
+import { EngineeringApproach } from "@/components/EngineeringApproach";
+import { ProductionReliability } from "@/components/ProductionReliability";
+import { ExperienceSection } from "@/components/ExperienceSection";
+import { SkillsSection } from "@/components/SkillsSection";
+import { ProfessionalSummary } from "@/components/ProfessionalSummary";
 import { ContactSection } from "@/components/ContactSection";
 
 const Index = () => {
   return (
     <Layout>
       <Hero />
-      <ProfessionalSummary />
-      <CoreExpertise />
-      <ServicesSection />
-      <TechnicalFocus />
+      <CapabilitiesSection />
       <ProjectsSection />
+      <EngineeringApproach />
+      <ProductionReliability />
+      <ExperienceSection />
+      <SkillsSection />
+      <ProfessionalSummary />
       <ContactSection />
     </Layout>
   );

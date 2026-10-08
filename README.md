@@ -1,73 +1,78 @@
-# Welcome to your Lovable project
+# Charles Mbillo — Personal Portfolio
 
-## Project info
+**IT, DevOps & Financial Systems Professional**  
+Nairobi, Kenya • [mbillocharles@gmail.com](mailto:mbillocharles@gmail.com) • [GitHub](https://github.com/CharlesMbillo)
 
-**URL**: https://lovable.dev/projects/a0d15119-2d55-4bd9-8204-fa934b3891b2
+Production: [https://portfolio-tech-for-good.vercel.app/](https://portfolio-tech-for-good.vercel.app/)
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## Overview
 
-**Use Lovable**
+A professional engineering portfolio showcasing production business systems, financial operations, reconciliation workflows, offline-first Point of Sale (POS) architecture, and DevOps reliability practices.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/a0d15119-2d55-4bd9-8204-fa934b3891b2) and start prompting.
+Unlike generic developer portfolios, this site is built to reflect deep operational empathy: designing systems that solve real transaction integrity, reconciliation, inventory, and business availability problems.
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## Featured Work & Case Studies
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Jimwas POS & Business Operations Platform**
+  - **Stack**: React, TypeScript, Supabase (PostgreSQL), Tailwind CSS, PWA, Web Crypto
+  - **Focus**: Multi-payment reconciliation, cash register float tracking, offline transactional integrity, cryptographic idempotency keys, and tenant-isolated RBAC.
+  - **Case Study Route**: `/projects/jimwas-pos`
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **RentFlow — Property & Financial Management Platform**
+  - **Context**: 74-unit residential property deployment in Nairobi
+  - **Focus**: Automated tenant billing, water utility metering with unit rate calculation, Equity Bank bill-payment reference validation, and monthly landlord arrears tracking.
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Architecture & Core Sections
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+1. **Hero**: Professional positioning, verified credentials (AWS Certified Cloud Practitioner), immediate resume access, and direct contact options.
+2. **Capabilities**: 4 core domain areas: Business Systems, Financial Operations, DevOps & Reliability, Data & Automation.
+3. **Selected Work**: Jimwas POS (flagship) + RentFlow property management system with real business metrics.
+4. **Engineering Approach**: 6-step discipline framework (Understand → Investigate → Build → Verify → Deploy → Improve).
+5. **Production & Reliability**: 6 operational pillars: Transaction Idempotency, Data Integrity, Offline-First Workflows, Cloud Sync & Backup, RBAC & Audit Trails, Production Troubleshooting.
+6. **Experience**: Evidence-grounded operational roles across POS/DevOps, housing/financial systems, ERP support, and cloud infrastructure.
+7. **Skills**: Curated, categorized capabilities without arbitrary percentage meters.
+8. **About**: Professional profile grounded in real-world IT and business operations.
+9. **Contact**: Formspree-backed direct inquiry form with verified email and phone connections.
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+## Tech Stack
+
+- **Framework**: [React 18](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+- **Build Tool**: [Vite 5](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) with a restrained, authoritative design system
+- **UI Primitives**: [shadcn/ui](https://ui.shadcn.com/) / Radix UI
+- **Routing**: [React Router DOM v6](https://reactrouter.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **SEO & Meta**: Open Graph, Twitter Cards, JSON-LD Schema.org Person & WebSite markup, sitemap.xml, robots.txt
+
+---
+
+## Getting Started
+
+### Prerequisites
+- Node.js (v18 or later recommended)
+- npm
+
+### Development
+```bash
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Production Build
+```bash
+npm run build
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## License
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/a0d15119-2d55-4bd9-8204-fa934b3891b2) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes it is!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Personal portfolio repository. All rights reserved © Charles Mbillo.

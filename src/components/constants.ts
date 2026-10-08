@@ -1,20 +1,14 @@
 
-import {
-  Home,
-  User,
-  Briefcase,
-  Layers,
-  Code,
-  BookOpen,
-  Mail,
-} from "lucide-react";
-
 export const NAV_ITEMS = [
-  { icon: Home, label: "Home", href: "#" },
-  { icon: User, label: "About", href: "#about" },
-  { icon: Code, label: "Expertise", href: "#expertise" },
-  { icon: Layers, label: "Focus Areas", href: "#focus-areas" },
-  { icon: Briefcase, label: "Services", href: "#services" },
-  { icon: BookOpen, label: "Projects", href: "#projects" },
-  { icon: Mail, label: "Contact", href: "#contact" },
+  { label: "Work", href: "#work" },
+  { label: "About", href: "#about" },
+  { label: "Experience", href: "#experience" },
+  { label: "Skills", href: "#skills" },
+  { label: "Contact", href: "#contact" },
 ] as const;
+
+export const SITE_EMAIL = "mbillocharles@gmail.com";
+export const SITE_PHONE = "+254111810434";
+export const SITE_WHATSAPP = "https://wa.me/254111810434";
+export const GITHUB_URL = "https://github.com/CharlesMbillo";
+export const CV_PATH = "/Charles Mbillo.pdf";
