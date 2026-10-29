@@ -1,42 +1,30 @@
 
-import { Server, Network, Database, CreditCard, Code, FileSpreadsheet } from "lucide-react";
+import { Monitor, DollarSign, Server, BarChart2 } from "lucide-react";
 
 const capabilities = [
   {
+    icon: Monitor,
+    title: "Business Systems",
+    description:
+      "POS platforms, inventory management, payments, user access control and end-to-end operational workflows.",
+  },
+  {
+    icon: DollarSign,
+    title: "Financial Operations",
+    description:
+      "Reconciliation, transaction integrity, financial reporting, payment workflows and data accuracy at scale.",
+  },
+  {
     icon: Server,
-    title: "Systems & Infrastructure Support",
+    title: "DevOps & Reliability",
     description:
-      "Windows Server & Linux administration, workstation configuration, user helpdesk support, hardware/peripherals, SOPs, and disaster recovery runbooks.",
+      "Production troubleshooting, deployment, testing, synchronisation and keeping systems dependable in daily use.",
   },
   {
-    icon: Network,
-    title: "Networking & Cloud Infrastructure",
+    icon: BarChart2,
+    title: "Data & Automation",
     description:
-      "AWS Cloud Practitioner (EC2, VPC, S3, IAM, CloudWatch), subnetting, security groups, route tables, DNS, TCP/IP, VPN fundamentals, and Vercel CI/CD.",
-  },
-  {
-    icon: Database,
-    title: "Databases & Data Integrity",
-    description:
-      "Supabase (PostgreSQL), MySQL, Microsoft Access, Row Level Security (RLS), schema design, indexing, and data validation (documented 99.9% accuracy record).",
-  },
-  {
-    icon: CreditCard,
-    title: "Financial & Payment Systems",
-    description:
-      "M-Pesa Daraja STK Push API, KCB Buni Gateway, Equity Bank Biller API, Instant Payment Notification (IPN) webhooks, automated cashbook and bank reconciliation.",
-  },
-  {
-    icon: Code,
-    title: "Application & Scripting",
-    description:
-      "React, TypeScript, JavaScript, Python, Node.js, RESTful APIs, Git/GitHub, and offline-first Progressive Web Apps (IndexedDB sync).",
-  },
-  {
-    icon: FileSpreadsheet,
-    title: "Productivity & Reporting Tools",
-    description:
-      "Advanced Microsoft Excel & Google Sheets (formulas, pivot tables, macro automation), Power BI dashboards, SharePoint, Google Workspace, and Microsoft Teams.",
+      "Excel-based analysis, reporting pipelines, workflow automation and structured data for operational decisions.",
   },
 ];
 
@@ -45,13 +33,13 @@ export const CapabilitiesSection = () => {
     <section id="capabilities" className="section-py bg-surface" aria-labelledby="capabilities-heading">
       <div className="section-container">
         <div className="mb-12">
-          <p className="section-label">Core Technical Competencies</p>
+          <p className="section-label">What I Do</p>
           <h2 id="capabilities-heading" className="text-3xl md:text-4xl font-bold text-ink tracking-tight">
-            Capabilities &amp; Domains
+            Capabilities
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {capabilities.map((cap) => {
             const Icon = cap.icon;
             return (

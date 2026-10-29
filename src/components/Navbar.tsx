@@ -47,7 +47,7 @@ export const Navbar = () => {
               Charles Mbillo
             </span>
             <span className="text-xs text-ink-muted hidden sm:block">
-              IT Officer · DevOps &amp; Systems Support
+              IT / DevOps · Financial Systems
             </span>
           </a>
 
@@ -113,7 +113,7 @@ export const Navbar = () => {
                 <div className="flex items-center justify-between p-5 border-b border-surface-border">
                   <div>
                     <p className="text-sm font-bold text-ink">Charles Mbillo</p>
-                    <p className="text-xs text-ink-muted">IT Officer · DevOps &amp; Systems Support</p>
+                    <p className="text-xs text-ink-muted">IT / DevOps · Financial Systems</p>
                   </div>
                 </div>
                 <nav className="flex flex-col p-5 gap-1 flex-1" aria-label="Mobile navigation">
