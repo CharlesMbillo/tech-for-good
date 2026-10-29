@@ -20,27 +20,24 @@ export const Hero = () => {
 
           {/* Left: Text content */}
           <div className="order-1 lg:order-1 space-y-6">
-            <p className="section-label">IT / DevOps &amp; Financial Systems</p>
+            <p className="section-label">IT Officer · DevOps &amp; Systems Support · Cloud Infrastructure · Financial Systems</p>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-ink leading-[1.05]">
               Charles<br />
               <span className="text-brand">Mbillo</span>
             </h1>
 
-            <p className="text-lg md:text-xl text-ink-muted leading-relaxed max-w-lg">
-              I build and support reliable business systems across POS, inventory,
-              financial operations, reconciliation and production technology.
+            <p className="text-lg md:text-xl text-ink-muted leading-relaxed max-w-lg font-medium">
+              10+ years of hands-on experience (2014 – Present) in business systems support, data management, operational reliability, and IT infrastructure automation.
             </p>
 
             <p className="text-base text-ink-muted leading-relaxed max-w-lg">
-              From production POS platforms to housing-management systems, I focus
-              on making technology reliable, auditable and useful to the people
-              running the business.
+              Combining deep systems troubleshooting capabilities with modern cloud and application engineering expertise. AWS Certified Cloud Practitioner (Gold Class, 2024) holding a Diploma in Information Technology from the Government Training Institute (G.T.I.) Embu.
             </p>
 
             <div className="flex items-center gap-2 text-sm text-ink-muted">
               <MapPin className="h-4 w-4 text-brand flex-shrink-0" aria-hidden="true" />
-              <span>Nairobi, Kenya · Open to remote opportunities</span>
+              <span>Nairobi, Kenya · Open to on-site, hybrid &amp; remote roles</span>
             </div>
 
             <div className="flex flex-wrap gap-3 pt-2">
@@ -77,7 +74,7 @@ export const Hero = () => {
               <div className="relative w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden border border-surface-border shadow-lg">
                 <img
                   src={charlesPhoto}
-                  alt="Charles Mbillo — IT / DevOps and Financial Systems Professional"
+                  alt="Charles Mbillo — IT Officer, DevOps & Systems Support Professional"
                   className="w-full h-full object-cover object-top"
                   loading="eager"
                   width={384}
@@ -87,7 +84,7 @@ export const Hero = () => {
               {/* Credential badge overlay */}
               <div className="absolute -bottom-2 left-2 sm:-bottom-3 sm:-left-3 bg-white border border-surface-border rounded-xl px-3 py-1.5 sm:px-4 sm:py-2 shadow-md">
                 <p className="text-xs font-semibold text-ink">AWS Certified</p>
-                <p className="text-[11px] sm:text-xs text-ink-muted">Cloud Practitioner</p>
+                <p className="text-[11px] sm:text-xs text-ink-muted">Cloud Practitioner (Gold Class)</p>
               </div>
             </div>
           </div>

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { GITHUB_URL } from "@/components/constants";
+import { GITHUB_URL, LIVE_JIMWAS_URL, JIMWAS_REPO_URL } from "@/components/constants";
 
 const tech = [
   "React 18",
@@ -102,7 +102,7 @@ export const JimwasCaseStudy = () => {
             Production point-of-sale and inventory platform designed around transaction integrity,
             offline operation, payments, inventory management and reliable synchronisation.
           </p>
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2 mb-8">
             {tech.map((t) => (
               <Badge
                 key={t}
@@ -112,6 +112,21 @@ export const JimwasCaseStudy = () => {
                 {t}
               </Badge>
             ))}
+          </div>
+
+          <div className="flex flex-wrap gap-3">
+            <a href={LIVE_JIMWAS_URL} target="_blank" rel="noreferrer">
+              <Button className="bg-brand text-white hover:bg-brand/90 font-medium gap-2">
+                <ExternalLink className="h-4 w-4" aria-hidden="true" />
+                Open Live Application (jimwas-yn.vercel.app)
+              </Button>
+            </a>
+            <a href={JIMWAS_REPO_URL} target="_blank" rel="noreferrer">
+              <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 font-medium gap-2">
+                <Github className="h-4 w-4" aria-hidden="true" />
+                View Repository
+              </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -199,10 +214,16 @@ export const JimwasCaseStudy = () => {
               Back to Portfolio
             </Button>
           </Link>
-          <a href={GITHUB_URL} target="_blank" rel="noreferrer">
+          <a href={LIVE_JIMWAS_URL} target="_blank" rel="noreferrer">
+            <Button className="bg-brand text-white hover:bg-brand/90 font-medium gap-2">
+              <ExternalLink className="h-4 w-4" aria-hidden="true" />
+              Live Application
+            </Button>
+          </a>
+          <a href={JIMWAS_REPO_URL} target="_blank" rel="noreferrer">
             <Button className="bg-ink text-white hover:bg-brand transition-colors font-medium gap-2">
               <Github className="h-4 w-4" aria-hidden="true" />
-              View on GitHub
+              GitHub Repository
             </Button>
           </a>
         </div>

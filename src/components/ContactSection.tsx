@@ -2,8 +2,8 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Phone, Github } from "lucide-react";
-import { SITE_EMAIL, SITE_PHONE, GITHUB_URL, SITE_WHATSAPP } from "./constants";
+import { Mail, Phone, Github, Linkedin } from "lucide-react";
+import { SITE_EMAIL, SITE_PHONE, GITHUB_URL, SITE_WHATSAPP, LINKEDIN_URL } from "./constants";
 
 export const ContactSection = () => {
   return (
@@ -18,11 +18,11 @@ export const ContactSection = () => {
                 Get in Touch
               </p>
               <h2 id="contact-heading" className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-4">
-                Let's solve a problem.
+                Let's discuss systems &amp; support.
               </h2>
               <p className="text-white/70 leading-relaxed">
-                Looking for someone who can bridge technology, financial operations and business
-                systems? I'd be happy to discuss an opportunity, project or collaboration.
+                Looking for an IT Officer or DevOps Specialist who ensures rock-solid network availability,
+                data security, workstation and server integrity, and proactive user support? Let's connect.
               </p>
             </div>
 
@@ -47,6 +47,19 @@ export const ContactSection = () => {
                   <Phone className="h-4 w-4" aria-hidden="true" />
                 </div>
                 <span className="text-sm">+254 111 810 434</span>
+              </a>
+
+              <a
+                href={LINKEDIN_URL}
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-3 text-white/70 hover:text-white transition-colors group"
+                aria-label="LinkedIn profile (opens in new tab)"
+              >
+                <div className="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center group-hover:bg-brand/20 transition-colors">
+                  <Linkedin className="h-4 w-4" aria-hidden="true" />
+                </div>
+                <span className="text-sm">linkedin.com/in/Charlesmbillo</span>
               </a>
 
               <a
